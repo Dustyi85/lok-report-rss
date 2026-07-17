@@ -2,6 +2,32 @@ import os
 import requests
 from bs4 import BeautifulSoup
 from feedgen.feed import FeedGenerator
+from datetime import datetime
+import re
+
+# Hilfsfunktion, um das deutsche Textdatum von LOK Report in ein echtes Datumsobjekt zu wandeln
+def parse_german_date(text):
+    months = {
+        "Januar": 1, "Februar": 2, "März": 3, "April": 4, "Mai": 5, "Juni": 6,
+        "Juli": 7, "August": 8, "September": 9, "Oktober": 10, "November": 11, "Dezember": 12
+    }
+    try:
+        # Sucht nach Mustern wie: "17. Juli 2026 12:00"
+        match = re.search(r'(\d{1,2})\.\s+([A-Za-zä]+)\s+(\d{4})\s+(\d{2}):(\d{2})', text)
+        if match:
+            day = int(match.group(1))
+            month_str = match.group(2)
+            year = int(match.group(3))
+            hour = int(match.group(4))
+            minute = int(match.group(5))
+            
+            month = months.get(month_str, 1)
+            # Erstellt das Datum und fügt die deutsche Zeitzone (+02:00 für Sommerzeit / +01:00 für Winterzeit) an
+            # Da es ein automatisierter RSS-Feed ist, nutzen wir hier einen festen UTC-Offset für Europa
+            return datetime(year, month, day, hour, minute, 0).astimezone()
+    except Exception:
+        pass
+    return None
 
 # 1. Webseite abrufen
 url = "https://lok-report.de"
@@ -23,14 +49,13 @@ fg.author({'name': 'LOK Report Scraper'})
 fg.link(href=url, rel='alternate')
 fg.description('Aktuelle Meldungen aus der Eisenbahnwelt')
 
-# 3. HTML-Struktur nach Überschriften trennen
+# 3. HTML-Struktur verarbeiten
 if soup:
-    # LOK Report nutzt <h2> für die einzelnen News-Titel
     titles = soup.select('h2')
     
     count = 0
     for title_element in titles:
-        if count >= 20:  # Maximal 20 Einträge in den Feed aufnehmen
+        if count >= 20:
             break
             
         link_element = title_element.find('a')
@@ -38,36 +63,45 @@ if soup:
             title_text = link_element.text.strip()
             link = link_element['href']
             
-            # Relative Links korrigieren
             if not link.startswith('http'):
-                link = 'https://www.lok-report.de' + link
+                link = 'https://lok-report.de' + link
             
-            # Unwichtige Seiten oder Navigationselemente herausfiltern
             if any(x in link for x in ["laenderuebersicht", "kontakt", "impressum", "datenschutz"]):
                 continue
                 
-            # Den dazugehörigen Text (liegt meist im nächsten Element nach der Überschrift) herausfinden
+            # Text und Datum extrahieren
             desc_text = ""
+            pub_date = None
             next_node = title_element.find_next_sibling()
             
-            # Holt den Text aus den Absätzen direkt unter der Überschrift bis zur nächsten News
-            while next_node and next_node.name != 'h2' and len(desc_text) < 400:
+            while next_node and next_node.name != 'h2' and len(desc_text) < 500:
                 if next_node.name in ['p', 'div'] and next_node.text:
-                    desc_text += " " + next_node.text.strip()
+                    node_text = next_node.text.strip()
+                    
+                    # Prüfen, ob dieser Absatz das Datum enthält (z. B. "Freitag, 17. Juli 2026")
+                    if any(day in node_text for day in ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"]) and ":" in node_text:
+                        pub_date = parse_german_date(node_text)
+                    else:
+                        desc_text += " " + node_text
+                        
                 next_node = next_node.find_next_sibling()
             
-            # Falls kein Text gefunden wurde, Titel als Beschreibung nutzen
             desc_text = desc_text.strip() if desc_text else title_text
             
-            # Neuen, sauberen RSS-Eintrag anlegen
+            # RSS-Eintrag erstellen
             fe = fg.add_entry()
             fe.id(link)
             fe.title(title_text)
             fe.link(href=link)
-            fe.description(desc_text[:300] + "...")  # Kürzt den Text für eine saubere Vorschau
+            fe.description(desc_text[:300] + "...")
+            
+            # Wenn ein Datum gefunden wurde, fügen wir es dem Eintrag hinzu
+            if pub_date:
+                fe.pubDate(pub_date)
+                
             count += 1
 
-# Sicherheits-Dummy falls die Seite komplett leer sein sollte
+# Dummy-Eintrag falls leer
 if len(fg.entry()) == 0:
     fe = fg.add_entry()
     fe.id(url)
@@ -77,4 +111,4 @@ if len(fg.entry()) == 0:
 
 # 4. Datei speichern
 fg.rss_file('feed.xml')
-print("RSS-Feed erfolgreich mit getrennten Artikeln generiert!")
+print("RSS-Feed erfolgreich mit Datumsangaben generiert!")
