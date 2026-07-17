@@ -11,12 +11,11 @@ def parse_german_date(text):
         "Juli": 7, "August": 8, "September": 9, "Oktober": 10, "November": 11, "Dezember": 12
     }
     try:
-        # Sucht nach dem Muster: "17. Juli 2026 12:00"
+        # Sucht flexibel nach z.B. "17. Juli 2026 12:00" oder "05. März 2026 09:15"
         match = re.search(r'(\d{1,2})\.\s+([A-Za-zä]+)\s+(\d{4})\s+(\d{2}):(\d{2})', text)
         if match:
             day, month_str, year, hour, minute = match.groups()
             month = months.get(month_str, 1)
-            # Erstellt das echte Datum mit deutscher Zeitzone
             return datetime(int(year), month, int(day), int(hour), int(minute), 0).astimezone()
     except Exception:
         pass
@@ -67,35 +66,45 @@ if soup:
             pub_date = None
             image_url = None
             
-            # Text, Datum und Bilder direkt unter der Überschrift suchen
+            # Ganzen HTML-Abschnitt bis zur nächsten H2-Überschrift einsammeln
+            html_block = ""
             next_node = title_element.find_next_sibling()
-            while next_node and next_node.name != 'h2' and len(desc_text) < 600:
-                if next_node.name in ['p', 'div'] and next_node.text:
-                    node_text = next_node.text.strip()
-                    
-                    # Hier wird die Zeile mit dem Datum (z.B. "Freitag, 17. Juli...") abgefangen
-                    if any(day in node_text for day in ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"]) and ":" in node_text:
-                        pub_date = parse_german_date(node_text)
-                    else:
-                        desc_text += " " + node_text
+            while next_node and next_node.name != 'h2' and len(html_block) < 3000:
+                html_block += str(next_node)
                 
-                # Bild extrahieren
-                img_element = next_node.find('img') if hasattr(next_node, 'find') else None
-                if img_element and img_element.get('src'):
-                    img_src = img_element['src']
-                    if not img_src.startswith('http'):
-                        image_url = 'https://lok-report.de' + img_src
-                    else:
-                        image_url = img_src
-                        
+                # Bilder einsammeln
+                if not image_url:
+                    img_element = next_node.find('img') if hasattr(next_node, 'find') else None
+                    if img_element and img_element.get('src'):
+                        img_src = img_element['src']
+                        image_url = img_src if img_src.startswith('http') else 'https://lok-report.de' + img_src
+                
                 next_node = next_node.find_next_sibling()
             
-            desc_text = desc_text.strip() if desc_text else title_text
+            # Text aus dem gesammelten HTML-Block sauber extrahieren (ohne HTML-Tags)
+            block_soup = BeautifulSoup(html_block, 'html.parser')
+            full_text = block_soup.text.strip()
             
+            # --- DATUMS-REPARATUR ---
+            # Wir suchen gezielt nach Zeilen im Text, die Wochentage und Uhrzeiten enthalten
+            for line in full_text.split('\n'):
+                line = line.strip()
+                if any(day in line for day in ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"]) and ":" in line:
+                    pub_date = parse_german_date(line)
+                    if pub_date:
+                        # Entfernt die Datumszeile aus der späteren Beschreibung
+                        full_text = full_text.replace(line, "")
+                        break
+            
+            # Beschreibung säubern (überschüssige Leerzeichen entfernen)
+            desc_text = re.sub(r'\s+', ' ', full_text).strip()
+            if not desc_text:
+                desc_text = title_text
+            
+            # RSS-Eintrag erstellen
             fe = fg.add_entry()
             
-            # TRICK FÜR FEEDLY: Wenn ein Datum da ist, hängen wir den Zeitstempel an die ID. 
-            # Das zwingt Feedly, den Eintrag komplett neu mit der echten Uhrzeit zu berechnen.
+            # Feedly-Austricksen über eindeutigen Datumslink
             if pub_date:
                 fe.id(f"{link}?v={int(pub_date.timestamp())}")
                 fe.pubDate(pub_date)
@@ -122,6 +131,5 @@ if len(fg.entry()) == 0:
     fe.link(href=url)
     fe.description('Der RSS-Feed wird im Hintergrund neu generiert.')
 
-# Als feed.xml speichern
 fg.rss_file('feed.xml')
-print("RSS-Feed erfolgreich mit Echtzeit-Datums-IDs generiert!")
+print("RSS-Feed erfolgreich mit tiefenanalysierten Datumsangaben generiert!")
