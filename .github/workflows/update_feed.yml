@@ -1,0 +1,33 @@
+name: Update RSS Feed
+
+on:
+  schedule:
+    - cron: '0 */3 * * *' # Läuft alle 3 Stunden automatisch
+  workflow_dispatch: # Ermöglicht manuelles Starten per Klick
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Code auschecken
+      uses: actions/checkout@v4
+
+    - name: Python einrichten
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Abhängigkeiten installieren
+      run: |
+        pip install requests beautifulsoup4 feedgen
+
+    - name: Feed generieren
+      run: python generate_rss.py
+
+    - name: Änderungen committen und pushen
+      run: |
+        git config --global user.name "GitHub Action"
+        git config --global user.email "action@github.com"
+        git add feed.xml
+        git diff-index --quiet HEAD || git commit -m "Update RSS Feed" -a
+        git push
