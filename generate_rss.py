@@ -10,17 +10,19 @@ ENABLE_LOGGING = True
 LOG_FILE = "log.txt"
 # ------------------------------
 
+# Globale Monatsliste für die Erkennung
+MONTHS_MAP = {
+    "Januar": 1, "Februar": 2, "März": 3, "April": 4, "Mai": 5, "Juni": 6,
+    "Juli": 7, "August": 8, "September": 9, "Oktober": 10, "November": 11, "Dezember": 12
+}
+
 def parse_german_date(text):
-    months = {
-        "Januar": 1, "Februar": 2, "März": 3, "April": 4, "Mai": 5, "Juni": 6,
-        "Juli": 7, "August": 8, "September": 9, "Oktober": 10, "November": 11, "Dezember": 12
-    }
     try:
-        # Matcht exakt Strukturen wie "Freitag, 17. Juli 2026 16:00" oder "17. Juli 2026 16:00"
+        # Sucht flexibel nach Strukturen wie "17. Juli 2026 16:00"
         match = re.search(r'(\d{1,2})\.\s+([A-Za-zä]+)\s+(\d{4})\s+(\d{2}):(\d{2})', text)
         if match:
             day, month_str, year, hour, minute = match.groups()
-            month = months.get(month_str, 1)
+            month = MONTHS_MAP.get(month_str, 1)
             return datetime(int(year), month, int(day), int(hour), int(minute), 0).astimezone()
     except Exception:
         pass
@@ -39,6 +41,15 @@ except Exception as e:
     soup = None
 
 log_entries = []
+
+# 2. RSS-Feed initialisieren
+fg = FeedGenerator()
+fg.id(url)
+fg.title('LOK Report News Premium Feed')
+fg.author({'name': 'LOK Report Scraper'})
+fg.link(href=url, rel='alternate')
+fg.description('Aktuelle Meldungen aus der Eisenbahnwelt mit Bildern')
+fg.load_extension('media', atom=False, rss=True)
 
 # 3. HTML-Struktur verarbeiten
 if soup:
@@ -91,22 +102,22 @@ if soup:
                     continue
                 
                 # Prüfen, ob diese Zeile das Datum enthält (z.B. "Freitag, 17. Juli 2026 16:00")
-                if ":" in line_str and any(m in line_str for m in months.keys()):
+                if ":" in line_str and any(m in line_str for m in MONTHS_MAP.keys()):
                     parsed = parse_german_date(line_str)
                     if parsed:
                         pub_date = parsed
-                        continue # Überspringe die Zeile, damit sie nicht im Vorschautext landet
+                        continue # Überspringe die Zeile für die spätere Beschreibung
                 
                 clean_lines.append(line_str)
             
-            # Beschreibung zusammenbauen (ohne die Datumszeile)
+            # Beschreibung zusammenbauen
             desc_text = " ".join(clean_lines)
             desc_text = re.sub(r'\s+', ' ', desc_text).strip()
             if not desc_text:
                 desc_text = title_text
             
             # Für das Logging mitschreiben
-            date_str_log = pub_date.strftime('%Y-%m-%d %H:%M:%S %z') if pub_date else "KEIN DATUM GEFOUNDEN"
+            date_str_log = pub_date.strftime('%Y-%m-%d %H:%M:%S %z') if pub_date else "KEIN DATUM GEFUNDEN"
             log_entries.append(f"[{date_str_log}] {title_text}")
             
             # RSS-Eintrag erstellen
