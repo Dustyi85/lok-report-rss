@@ -74,6 +74,11 @@ if soup:
             pub_date = None
             image_url = None
             
+            # Datum direkt nach dem <h2>-Element suchen (als nächstes Sibling)
+            date_element = title_element.find_next_sibling('span', class_='mod-articles-category-date')
+            if date_element and date_element.text:
+                pub_date = parse_german_date(date_element.text)
+            
             html_block = ""
             next_node = title_element.find_next_sibling()
             while next_node and next_node.name != 'h2' and len(html_block) < 3000:
@@ -86,11 +91,6 @@ if soup:
                 next_node = next_node.find_next_sibling()
             
             block_soup = BeautifulSoup(html_block, 'html.parser')
-            
-            # Datum über Klasse auslesen
-            date_element = block_soup.select_one('.mod-articles-category-date')
-            if date_element and date_element.text:
-                pub_date = parse_german_date(date_element.text)
             
             # Für das Logging mitschreiben (Auch wenn kein Datum geparst werden konnte)
             date_str_log = pub_date.strftime('%Y-%m-%d %H:%M:%S %z') if pub_date else "KEIN DATUM GEFUNDEN"
