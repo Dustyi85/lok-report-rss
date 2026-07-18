@@ -11,8 +11,10 @@ def parse_german_date(text):
         "Juli": 7, "August": 8, "September": 9, "Oktober": 10, "November": 11, "Dezember": 12
     }
     try:
-        # Sucht flexibel nach z.B. "17. Juli 2026 12:00" oder "05. März 2026 09:15"
-        match = re.search(r'(\d{1,2})\.\s+([A-Za-zä]+)\s+(\d{4})\s+(\d{2}):(\d{2})', text)
+        # Bereinigt typische Joomla-Trennzeichen wie Bindestriche
+        clean_text = text.replace('-', '').strip()
+        # Sucht flexibel nach dem Muster: "17. Juli 2026 12:00"
+        match = re.search(r'(\d{1,2})\.\s+([A-Za-zä]+)\s+(\d{4})\s+(\d{2}):(\d{2})', clean_text)
         if match:
             day, month_str, year, hour, minute = match.groups()
             month = months.get(month_str, 1)
@@ -66,13 +68,13 @@ if soup:
             pub_date = None
             image_url = None
             
-            # Ganzen HTML-Abschnitt bis zur nächsten H2-Überschrift einsammeln
+            # Ganzen HTML-Abschnitt des Artikels bis zur nächsten Überschrift einsammeln
             html_block = ""
             next_node = title_element.find_next_sibling()
             while next_node and next_node.name != 'h2' and len(html_block) < 3000:
                 html_block += str(next_node)
                 
-                # Bilder einsammeln
+                # Bilder-Extraktion
                 if not image_url:
                     img_element = next_node.find('img') if hasattr(next_node, 'find') else None
                     if img_element and img_element.get('src'):
@@ -81,22 +83,18 @@ if soup:
                 
                 next_node = next_node.find_next_sibling()
             
-            # Text aus dem gesammelten HTML-Block sauber extrahieren (ohne HTML-Tags)
             block_soup = BeautifulSoup(html_block, 'html.parser')
+            
+            # --- NEUE DATUMS-ERKENNUNG ÜBER DIE GEWÜNSCHTE KLASSE ---
+            date_element = block_soup.select_one('.mod-articles-category-date')
+            if date_element and date_element.text:
+                pub_date = parse_german_date(date_element.text)
+            
+            # Textbeschreibung säubern (Datumstext für die Optik aus der Beschreibung entfernen)
+            if date_element:
+                date_element.decompose() # Entfernt das Datums-HTML-Tag aus dem Beschreibungstext
+                
             full_text = block_soup.text.strip()
-            
-            # --- DATUMS-REPARATUR ---
-            # Wir suchen gezielt nach Zeilen im Text, die Wochentage und Uhrzeiten enthalten
-            for line in full_text.split('\n'):
-                line = line.strip()
-                if any(day in line for day in ["Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag", "Sonntag"]) and ":" in line:
-                    pub_date = parse_german_date(line)
-                    if pub_date:
-                        # Entfernt die Datumszeile aus der späteren Beschreibung
-                        full_text = full_text.replace(line, "")
-                        break
-            
-            # Beschreibung säubern (überschüssige Leerzeichen entfernen)
             desc_text = re.sub(r'\s+', ' ', full_text).strip()
             if not desc_text:
                 desc_text = title_text
@@ -104,7 +102,7 @@ if soup:
             # RSS-Eintrag erstellen
             fe = fg.add_entry()
             
-            # Feedly-Austricksen über eindeutigen Datumslink
+            # Feedly-Cache austricksen mittels Zeitstempel-ID
             if pub_date:
                 fe.id(f"{link}?v={int(pub_date.timestamp())}")
                 fe.pubDate(pub_date)
@@ -132,4 +130,4 @@ if len(fg.entry()) == 0:
     fe.description('Der RSS-Feed wird im Hintergrund neu generiert.')
 
 fg.rss_file('feed.xml')
-print("RSS-Feed erfolgreich mit tiefenanalysierten Datumsangaben generiert!")
+print("RSS-Feed erfolgreich mit .mod-articles-category-date generiert!")
