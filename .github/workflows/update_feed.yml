@@ -19,7 +19,7 @@ jobs:
 
     - name: Abhängigkeiten installieren
       run: |
-        pip install requests beautifulsoup4 feedgen
+        pip install requests beautifulsoup4 feedgen python-dateutil
 
     - name: Feed generieren
       run: python generate_rss.py
