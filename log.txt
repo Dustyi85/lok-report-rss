@@ -1,21 +1,23 @@
-=== LOG DURCHLAUF VOM 2026-07-18 14:43:06 ===
-[KEIN DATUM GEFUNDEN] Sonderzug nach Ostseebad Binz
-[KEIN DATUM GEFUNDEN] Reise nach Čimelice (Teil 1)
-[KEIN DATUM GEFUNDEN] Der Morgenzug nach Paderborn
-[KEIN DATUM GEFUNDEN] 110 350 vor Charterzug
-[KEIN DATUM GEFUNDEN] Usedomer Bäderbahn
-[KEIN DATUM GEFUNDEN] Lutherstadt Wittenberg
-[KEIN DATUM GEFUNDEN] Eine seltene Lokomotive bei der NIAG
-[KEIN DATUM GEFUNDEN] Sarstedt
-[KEIN DATUM GEFUNDEN] Bahnhof Bodenfelde
-[KEIN DATUM GEFUNDEN] Hannover Hbf
-[KEIN DATUM GEFUNDEN] "Moderner" IC(E)-Verkehr nun auch in Sechtem (zwischen Köln und Bonn)
-[KEIN DATUM GEFUNDEN] Ersatzverkehr beim RE 44
-[KEIN DATUM GEFUNDEN] Bückeburg
-[KEIN DATUM GEFUNDEN] RB Bergen auf Rügen - Lauterbach Mole
-[KEIN DATUM GEFUNDEN] 204 354 mit Kranzug
-[KEIN DATUM GEFUNDEN] Bündnis 90/Die Grünen: Bundesnetzagentur ignoriert Abgeordnete bezüglich der Regulierung im Fernverkehr - Stellungnahme Matthias Gastel
-[KEIN DATUM GEFUNDEN] Sachsen: Chemnitzer Bahnring geht in die nächste Bauphase
-[KEIN DATUM GEFUNDEN] Baden-Württemberg: Letter of Intent zum Ersatzverkehr Stuttgart 21
-[KEIN DATUM GEFUNDEN] Die Güterbahnen: Mit diesem Italo-Beschluss können alle zufrieden sein
-[KEIN DATUM GEFUNDEN] Sachsen/Sachsen-Anhalt/Thüringen: 2 Mio. Euro für länderübergreifendes Mobilitätsprojekt "SMOViE" im Mitteldeutschen Revier
+=== LOG DURCHLAUF VOM 2026-07-18 14:56:42 ===
+Artikel insgesamt: 20
+
+[KEIN DATUM] Deutsche Bahn: Regionale Führungspositionen neu besetzt | Bild: JA
+[KEIN DATUM] Sonderzug nach Ostseebad Binz | Bild: JA
+[KEIN DATUM] Reise nach Čimelice (Teil 1) | Bild: JA
+[KEIN DATUM] Der Morgenzug nach Paderborn | Bild: JA
+[KEIN DATUM] 110 350 vor Charterzug | Bild: JA
+[KEIN DATUM] Usedomer Bäderbahn | Bild: JA
+[KEIN DATUM] Lutherstadt Wittenberg | Bild: JA
+[KEIN DATUM] Eine seltene Lokomotive bei der NIAG | Bild: JA
+[KEIN DATUM] Sarstedt | Bild: JA
+[KEIN DATUM] Bahnhof Bodenfelde | Bild: JA
+[KEIN DATUM] Hannover Hbf | Bild: JA
+[KEIN DATUM] "Moderner" IC(E)-Verkehr nun auch in Sechtem (zwischen Köln und Bonn) | Bild: JA
+[KEIN DATUM] Ersatzverkehr beim RE 44 | Bild: JA
+[KEIN DATUM] Bückeburg | Bild: JA
+[KEIN DATUM] RB Bergen auf Rügen - Lauterbach Mole | Bild: JA
+[KEIN DATUM] 204 354 mit Kranzug | Bild: JA
+[KEIN DATUM] Bündnis 90/Die Grünen: Bundesnetzagentur ignoriert Abgeordnete bezüglich der Regulierung im Fernverkehr - Stellungnahme Matthias Gastel | Bild: JA
+[KEIN DATUM] Sachsen: Chemnitzer Bahnring geht in die nächste Bauphase | Bild: JA
+[KEIN DATUM] Baden-Württemberg: Letter of Intent zum Ersatzverkehr Stuttgart 21 | Bild: JA
+[KEIN DATUM] Die Güterbahnen: Mit diesem Italo-Beschluss können alle zufrieden sein | Bild: JA
