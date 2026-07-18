@@ -5,15 +5,18 @@ from feedgen.feed import FeedGenerator
 from datetime import datetime
 import re
 
+# --- LOGGING KONFIGURATION ---
+ENABLE_LOGGING = True  # Auf False setzen, um das Logging auszuschalten
+LOG_FILE = "log.txt"
+# ------------------------------
+
 def parse_german_date(text):
     months = {
         "Januar": 1, "Februar": 2, "März": 3, "April": 4, "Mai": 5, "Juni": 6,
         "Juli": 7, "August": 8, "September": 9, "Oktober": 10, "November": 11, "Dezember": 12
     }
     try:
-        # Bereinigt typische Joomla-Trennzeichen wie Bindestriche
         clean_text = text.replace('-', '').strip()
-        # Sucht flexibel nach dem Muster: "17. Juli 2026 12:00"
         match = re.search(r'(\d{1,2})\.\s+([A-Za-zä]+)\s+(\d{4})\s+(\d{2}):(\d{2})', clean_text)
         if match:
             day, month_str, year, hour, minute = match.groups()
@@ -44,6 +47,9 @@ fg.link(href=url, rel='alternate')
 fg.description('Aktuelle Meldungen aus der Eisenbahnwelt mit Bildern')
 fg.load_extension('media', atom=False, rss=True)
 
+# Liste für die Log-Einträge vorbereiten
+log_entries = []
+
 # 3. HTML-Struktur verarbeiten
 if soup:
     titles = soup.select('h2')
@@ -68,41 +74,37 @@ if soup:
             pub_date = None
             image_url = None
             
-            # Ganzen HTML-Abschnitt des Artikels bis zur nächsten Überschrift einsammeln
             html_block = ""
             next_node = title_element.find_next_sibling()
             while next_node and next_node.name != 'h2' and len(html_block) < 3000:
                 html_block += str(next_node)
-                
-                # Bilder-Extraktion
                 if not image_url:
                     img_element = next_node.find('img') if hasattr(next_node, 'find') else None
                     if img_element and img_element.get('src'):
                         img_src = img_element['src']
                         image_url = img_src if img_src.startswith('http') else 'https://lok-report.de' + img_src
-                
                 next_node = next_node.find_next_sibling()
             
             block_soup = BeautifulSoup(html_block, 'html.parser')
             
-            # --- NEUE DATUMS-ERKENNUNG ÜBER DIE GEWÜNSCHTE KLASSE ---
+            # Datum über Klasse auslesen
             date_element = block_soup.select_one('.mod-articles-category-date')
             if date_element and date_element.text:
                 pub_date = parse_german_date(date_element.text)
             
-            # Textbeschreibung säubern (Datumstext für die Optik aus der Beschreibung entfernen)
+            # Für das Logging mitschreiben (Auch wenn kein Datum geparst werden konnte)
+            date_str_log = pub_date.strftime('%Y-%m-%d %H:%M:%S %z') if pub_date else "KEIN DATUM GEFUNDEN"
+            log_entries.append(f"[{date_str_log}] {title_text}")
+            
             if date_element:
-                date_element.decompose() # Entfernt das Datums-HTML-Tag aus dem Beschreibungstext
+                date_element.decompose()
                 
             full_text = block_soup.text.strip()
             desc_text = re.sub(r'\s+', ' ', full_text).strip()
             if not desc_text:
                 desc_text = title_text
             
-            # RSS-Eintrag erstellen
             fe = fg.add_entry()
-            
-            # Feedly-Cache austricksen mittels Zeitstempel-ID
             if pub_date:
                 fe.id(f"{link}?v={int(pub_date.timestamp())}")
                 fe.pubDate(pub_date)
@@ -113,7 +115,6 @@ if soup:
             fe.title(title_text)
             fe.link(href=link)
             
-            # Bild einbetten
             if image_url:
                 fe.description(f'<img src="{image_url}" style="max-width:100%; height:auto;"/><br/>{desc_text[:300]}...')
                 fe.enclosure(image_url, 0, 'image/jpeg')
@@ -129,5 +130,16 @@ if len(fg.entry()) == 0:
     fe.link(href=url)
     fe.description('Der RSS-Feed wird im Hintergrund neu generiert.')
 
+# 4. RSS-Datei speichern
 fg.rss_file('feed.xml')
-print("RSS-Feed erfolgreich mit .mod-articles-category-date generiert!")
+
+# 5. Log-Datei schreiben (falls aktiviert)
+if ENABLE_LOGGING:
+    current_run = datetime.now().astimezone().strftime('%Y-%m-%d %H:%M:%S')
+    with open(LOG_FILE, "w", encoding="utf-8") as f:
+        f.write(f"=== LOG DURCHLAUF VOM {current_run} ===\n")
+        f.write("\n".join(log_entries))
+        f.write("\n")
+    print(f"Logging erfolgreich in {LOG_FILE} geschrieben.")
+
+print("RSS-Feed erfolgreich generiert!")
