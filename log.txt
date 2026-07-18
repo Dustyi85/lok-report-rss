@@ -1,4 +1,11 @@
-=== LOG DURCHLAUF VOM 2026-07-18 07:13:33 ===
+=== LOG DURCHLAUF VOM 2026-07-18 14:30:38 ===
+[KEIN DATUM GEFUNDEN] Sonderzug nach Ostseebad Binz
+[KEIN DATUM GEFUNDEN] Reise nach Čimelice (Teil 1)
+[KEIN DATUM GEFUNDEN] Der Morgenzug nach Paderborn
+[KEIN DATUM GEFUNDEN] 110 350 vor Charterzug
+[KEIN DATUM GEFUNDEN] Usedomer Bäderbahn
+[KEIN DATUM GEFUNDEN] Lutherstadt Wittenberg
+[KEIN DATUM GEFUNDEN] Eine seltene Lokomotive bei der NIAG
 [KEIN DATUM GEFUNDEN] Sarstedt
 [KEIN DATUM GEFUNDEN] Bahnhof Bodenfelde
 [KEIN DATUM GEFUNDEN] Hannover Hbf
@@ -12,10 +19,3 @@
 [KEIN DATUM GEFUNDEN] Baden-Württemberg: Letter of Intent zum Ersatzverkehr Stuttgart 21
 [KEIN DATUM GEFUNDEN] Die Güterbahnen: Mit diesem Italo-Beschluss können alle zufrieden sein
 [KEIN DATUM GEFUNDEN] Sachsen/Sachsen-Anhalt/Thüringen: 2 Mio. Euro für länderübergreifendes Mobilitätsprojekt "SMOViE" im Mitteldeutschen Revier
-[KEIN DATUM GEFUNDEN] Europäische Union: Prioritäten der Irischen Ratspräsidentschaft im Ausschuss für Verkehr und Tourismus
-[KEIN DATUM GEFUNDEN] NRW: Reaktivierung der Röhrtalbahn derzeit nicht förderfähig
-[KEIN DATUM GEFUNDEN] Bundesnetzagentur: Mehr Wett­be­werb im Fern­ver­kehr – Fai­re Chan­cen für neue An­bie­ter
-[KEIN DATUM GEFUNDEN] Österreich: Weststrecke nach Oberleitungsschaden beeinträchtigt – Güterverkehr  beeinträchtigt –  Nachtzugverkehr sichergestellt
-[KEIN DATUM GEFUNDEN] Österreich: Mobilitätsminister Hanke sichert Finanzierung für Akku-Hybrid-Züge der Zillertalbahn
-[KEIN DATUM GEFUNDEN] Bayern: Pro Bahn - Buslinien zwischen Stadt und Münchner Umland gemeinsam finanzieren
-[KEIN DATUM GEFUNDEN] Mofair: Mehr Wettbewerb im Fernverkehr – Gewinn für Fahrgäste, keine Gefahr
