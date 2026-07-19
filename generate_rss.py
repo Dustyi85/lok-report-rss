@@ -7,14 +7,15 @@ import re
 from dateutil import parser as date_parser
 import mimetypes
 from urllib.parse import urljoin, urlparse
+from zoneinfo import ZoneInfo
 
 # --- LOGGING KONFIGURATION ---
 ENABLE_LOGGING = True  # Auf False setzen, um das Logging auszuschalten
 LOG_FILE = "log.txt"
 # ------------------------------
 
-# Lokale Zeitzone für naive Datetimes
-LOCAL_TZ = datetime.now().astimezone().tzinfo
+# Lokale Zeitzone: Mitteleuropäische Zeit / Sommerzeit (Europe/Berlin)
+LOCAL_TZ = ZoneInfo("Europe/Berlin")
 
 # Basis-Pfad für gewünschte Nachrichten-Bilder
 NEWS_IMAGE_PATH = '/images/news/'
@@ -337,13 +338,19 @@ if collected:
         fe = fg.add_entry()
         if pub_date:
             try:
+                # sicherstellen, dass pub_date eine aware datetime in LOCAL_TZ ist
+                if pub_date.tzinfo is None:
+                    pub_date = pub_date.replace(tzinfo=LOCAL_TZ)
+                else:
+                    # konvertiere ggf. in LOCAL_TZ
+                    pub_date = pub_date.astimezone(LOCAL_TZ)
                 fe.id(f"{link}?v={int(pub_date.timestamp())}")
             except Exception:
                 fe.id(link)
             fe.pubDate(pub_date)
         else:
             fe.id(link)
-            fe.pubDate(datetime.now().astimezone())
+            fe.pubDate(datetime.now(LOCAL_TZ))
 
         fe.title(title_text)
         fe.link(href=link)
@@ -356,6 +363,8 @@ if collected:
             try:
                 # Enclosure: nur das erste Bild setzen
                 first = image_urls[0]
+                # Falls first relativ war, make absolute
+                first = _abs_url(NEWS_IMAGE_HOST, first)
                 mime, _ = mimetypes.guess_type(first)
                 mime = mime or 'image/jpeg'
                 fe.enclosure(first, 0, mime)
@@ -385,7 +394,7 @@ except Exception as e:
 # 5. Log-Datei schreiben
 if ENABLE_LOGGING:
     try:
-        current_run = datetime.now().astimezone().strftime('%Y-%m-%d %H:%M:%S')
+        current_run = datetime.now(LOCAL_TZ).strftime('%Y-%m-%d %H:%M:%S')
         with open(LOG_FILE, "w", encoding="utf-8") as f:
             f.write(f"=== LOG DURCHLAUF VOM {current_run} ===\n")
             f.write(f"Artikel insgesamt: {len(fg.entry())}\n\n")
