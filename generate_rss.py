@@ -303,15 +303,12 @@ if collected:
     # Beschränke auf 20 Einträge
     collected = collected[:20]
 
-    # Erstelle Feed-Einträge in der gewünschten Reihenfolge
+    # --- WICHTIG: Log-Einträge jetzt erstellen (beibehalten neue->alte Reihenfolge) ---
     for item in collected:
         title_text = item['title']
-        link = item['link']
         pub_date = item['pub_date']
         image_urls = item.get('image_urls', [])
-        desc_text = item['desc']
 
-        # Für das Logging: Bildnamen extrahieren (alle Bilder)
         if image_urls:
             image_names = []
             for iu in image_urls:
@@ -327,6 +324,14 @@ if collected:
 
         date_str_log = pub_date.strftime('%Y-%m-%d %H:%M:%S %z') if pub_date else "KEIN DATUM"
         log_entries.append(f"[{date_str_log}] {title_text} | Bilder: {image_names_str} | URLs: {image_urls_str}")
+
+    # --- Feed-Einträge hinzufügen in umgekehrter Reihenfolge, damit feed.xml neu->alt enthält ---
+    for item in reversed(collected):
+        title_text = item['title']
+        link = item['link']
+        pub_date = item['pub_date']
+        image_urls = item.get('image_urls', [])
+        desc_text = item['desc']
 
         # Erstelle Feed-Entry
         fe = fg.add_entry()
