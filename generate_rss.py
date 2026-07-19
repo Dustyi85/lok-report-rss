@@ -28,8 +28,9 @@ def parse_german_date(text):
         return None
 
     months = {
-        "Januar": 1, "Februar": 2, "März": 3, "April": 4, "Mai": 5, "Juni": 6,
-        "Juli": 7, "August": 8, "September": 9, "Oktober": 10, "November": 11, "Dezember": 12
+        "Januar": "January", "Februar": "February", "März": "March", "April": "April", 
+        "Mai": "May", "Juni": "June", "Juli": "July", "August": "August", 
+        "September": "September", "Oktober": "October", "November": "November", "Dezember": "December"
     }
 
     try:
@@ -154,7 +155,7 @@ def fetch_article_metadata(article_url, headers):
 
 # 1. Webseite abrufen
 url = "https://lok-report.de"
-headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
+headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)'}
 
 try:
     response = requests.get(url, headers=headers, timeout=15)
@@ -181,6 +182,7 @@ collected = []
 
 # 3. HTML-Struktur verarbeiten
 if soup:
+    # Versuche verschiedene mögliche Selektoren für Artikel
     titles = soup.select('h2')
 
     # Fallback: Wenn h2 nicht funktioniert, versuche andere Selektoren
@@ -373,17 +375,23 @@ if collected:
 
     print(f"\n✓ Insgesamt {len(collected)} Artikel dem Feed hinzugefügt")
 
+# Fallback: Wenn keine Artikel gefunden wurden
 if len(fg.entry()) == 0:
+    print("⚠ Keine Artikel gefunden - erstelle Platzhalter")
     fe = fg.add_entry()
     fe.id(url)
     fe.title('Wartung: Feed wird aktualisiert')
     fe.link(href=url)
-    fe.description('Der RSS-Feed wird im Hintergrund neu generiert.')
+    fe.description('Der RSS-Feed wird im Hintergrund neu generiert oder die HTML-Struktur der Website hat sich geändert.')
 
 # 4. RSS-Datei speichern
-fg.rss_file('feed.xml')
+try:
+    fg.rss_file('feed.xml')
+    print("✓ RSS-Feed erfolgreich generiert!")
+except Exception as e:
+    print(f"✗ Fehler beim Speichern des RSS-Feeds: {e}")
 
-# 5. Log-Datei schreiben (falls aktiviert)
+# 5. Log-Datei schreiben
 if ENABLE_LOGGING:
     try:
         current_run = datetime.now(LOCAL_TZ).strftime('%Y-%m-%d %H:%M:%S')
