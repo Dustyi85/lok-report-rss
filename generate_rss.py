@@ -354,12 +354,38 @@ if collected:
         fe.link(href=link)
 
         # Baue Beschreibung: alle gefundenen Bilder einfügen (in Reihenfolge)
-        desc_content = desc_text[:300] + "..."
+        # Plain-text Vorschau (für Reader, die nur Text anzeigen)
+        preview_text = re.sub(r'<[^>]+>', '', desc_text)  # HTML-Tags entfernen falls vorhanden
+        preview_text = (preview_text[:300].strip() + "...") if preview_text else title_text
+
+        # HTML-Beschreibung (für Reader, die HTML/content:encoded auswerten)
         if image_urls:
             imgs_html = ''.join([f'<img src="{iu}" style="max-width:100%; height:auto;"/><br/>' for iu in image_urls])
-            fe.description(f'{imgs_html}<br/>{desc_content}')
+            description_html = f'{imgs_html}<br/>{preview_text}'
+        else:
+            description_html = preview_text
+
+        # Setze mehrere Felder, damit möglichst viele Reader eine Vorschau anzeigen:
+        try:
+            fe.description(preview_text)                # RSS <description> (plain text)
+        except Exception:
+            pass
+        try:
+            fe.summary(preview_text)                    # Atom <summary>
+        except Exception:
+            pass
+        try:
+            fe.content(description_html, type='html')   # <content:encoded> / content type="html"
+        except Exception:
+            # Fallback: wenn content nicht unterstützt wird, ensure description contains HTML
             try:
-                # Enclosure: nur das erste Bild setzen
+                fe.description(description_html)
+            except Exception:
+                pass
+
+        # Enclosure: nur das erste Bild setzen (falls vorhanden)
+        if image_urls:
+            try:
                 first = image_urls[0]
                 # Falls first relativ war, make absolute
                 first = _abs_url(NEWS_IMAGE_HOST, first)
@@ -368,8 +394,6 @@ if collected:
                 fe.enclosure(first, 0, mime)
             except Exception:
                 pass
-        else:
-            fe.description(desc_content)
 
     print(f"\n✓ Insgesamt {len(collected)} Artikel dem Feed hinzugefügt")
 
