@@ -324,8 +324,8 @@ if collected:
         date_str_log = pub_date.strftime('%Y-%m-%d %H:%M:%S %z') if pub_date else "KEIN DATUM"
         log_entries.append(f"[{date_str_log}] {title_text} | Bilder: {image_names_str} | URLs: {image_urls_str}")
 
-    # --- Feed-Einträge hinzufügen in umgekehrter Reihenfolge, damit feed.xml neu->alt enthält ---
-    for item in reversed(collected):
+    # --- Feed-Einträge hinzufügen in korrekter Reihenfolge (neue->alte), wie collected sortiert ist ---
+    for item in collected:
         title_text = item['title']
         link = item['link']
         pub_date = item['pub_date']
