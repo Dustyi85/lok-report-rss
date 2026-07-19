@@ -5,6 +5,8 @@ from feedgen.feed import FeedGenerator
 from datetime import datetime, timezone
 import re
 from dateutil import parser as date_parser
+import mimetypes
+from urllib.parse import urljoin, urlparse
 
 # --- LOGGING KONFIGURATION ---
 ENABLE_LOGGING = True  # Auf False setzen, um das Logging auszuschalten
@@ -13,6 +15,10 @@ LOG_FILE = "log.txt"
 
 # Lokale Zeitzone für naive Datetimes
 LOCAL_TZ = datetime.now().astimezone().tzinfo
+
+# Muster für Bildnamen, die wahrscheinlich Icons/Navigation sind und übersprungen werden sollten
+SKIP_IMAGE_PATTERNS = re.compile(r'arrow|icon|logo|sprite|favicon|social|button', re.I)
+
 
 def parse_german_date(text):
     """Versucht verschiedene Datum-Formate zu parsen und gibt immer ein aware datetime zurück."""
@@ -49,6 +55,7 @@ def parse_german_date(text):
     except Exception as e:
         print(f"Fehler beim Parsing von '{text}': {e}")
     return None
+
 
 def fetch_article_metadata(article_url, headers):
     """
@@ -109,30 +116,49 @@ def fetch_article_metadata(article_url, headers):
         image_url = None
         og = soup.find('meta', property='og:image')
         if og and og.get('content'):
-            image_url = og['content']
+            candidate = og['content']
+            # skip obvious icons
+            name = os.path.basename(urlparse(candidate).path or '')
+            if not SKIP_IMAGE_PATTERNS.search(name):
+                image_url = candidate
         if not image_url:
             link_img = soup.find('link', rel='image_src')
             if link_img and link_img.get('href'):
-                image_url = link_img['href']
+                candidate = link_img['href']
+                name = os.path.basename(urlparse(candidate).path or '')
+                if not SKIP_IMAGE_PATTERNS.search(name):
+                    image_url = candidate
         if not image_url:
             img = soup.find('img', class_=re.compile(r'article|featured|header|main', re.I))
             if not img:
-                img = soup.find('img', attrs={'src': re.compile(r'jpg|png|jpeg', re.I)})
-            if img and img.get('src'):
-                image_url = img['src']
+                # find all imgs and pick the first that doesn't match skip patterns
+                imgs = soup.find_all('img', attrs={'src': re.compile(r'jpg|png|jpeg', re.I)})
+                for im in imgs:
+                    src = im.get('src')
+                    if not src:
+                        continue
+                    name = os.path.basename(urlparse(src).path or '')
+                    if SKIP_IMAGE_PATTERNS.search(name):
+                        continue
+                    image_url = src
+                    break
+            else:
+                src = img.get('src')
+                if src:
+                    name = os.path.basename(urlparse(src).path or '')
+                    if not SKIP_IMAGE_PATTERNS.search(name):
+                        image_url = src
 
         # Vollständige URL sicherstellen
         if image_url and not image_url.startswith('http'):
-            if image_url.startswith('/'):
-                image_url = 'https://lok-report.de' + image_url
-            else:
-                image_url = 'https://lok-report.de/' + image_url
+            image_url = urljoin('https://lok-report.de', image_url)
 
         return image_url, pub_date
 
     except Exception as e:
         print(f"Fehler beim Laden der Artikel-Seite {article_url}: {e}")
     return None, None
+
 
 # 1. Webseite abrufen
 url = "https://lok-report.de"
@@ -158,6 +184,9 @@ fg.load_extension('media', atom=False, rss=True)
 # Liste für die Log-Einträge vorbereiten
 log_entries = []
 
+# Temporäre Liste zum Sammeln der Artikel bevor Sortierung
+collected = []
+
 # 3. HTML-Struktur verarbeiten
 if soup:
     # Versuche verschiedene mögliche Selektoren für Artikel
@@ -173,7 +202,7 @@ if soup:
 
     count = 0
     for title_element in titles:
-        if count >= 20:
+        if count >= 200:  # Sammle mehr, sortiere und beschränke später auf 20
             break
 
         # Versuche den Link zu finden
@@ -191,7 +220,7 @@ if soup:
         link = link_element['href']
 
         if not link.startswith('http'):
-            link = 'https://lok-report.de' + link
+            link = urljoin('https://lok-report.de', link)
 
         # Filtere unerwünschte Links
         if any(x in link.lower() for x in ["laenderuebersicht", "kontakt", "impressum", "datenschutz"]):
@@ -201,7 +230,7 @@ if soup:
         pub_date = None
         image_url = None
 
-        print(f"\nVerarbeite Artikel {count + 1}: {title_text[:50]}...")
+        print(f"\nVerarbeite Artikel (übersicht): {title_text[:50]}...")
 
         # Datum suchen - mehrere Strategien (Übersichtsseite)
         date_element = title_element.find_next_sibling('span', class_=re.compile(r'date|time', re.I))
@@ -232,8 +261,10 @@ if soup:
                 img_element = next_node.find('img')
                 if img_element and img_element.get('src'):
                     img_src = img_element['src']
-                    image_url = img_src if img_src.startswith('http') else 'https://lok-report.de' + img_src
-                    print(f"  → Bild gefunden (Sibling): {image_url[:60]}...")
+                    name = os.path.basename(urlparse(img_src).path or '')
+                    if not SKIP_IMAGE_PATTERNS.search(name):
+                        image_url = img_src if img_src.startswith('http') else urljoin('https://lok-report.de', img_src)
+                        print(f"  → Bild gefunden (Sibling): {image_url[:60]}...")
             next_node = next_node.find_next_sibling()
 
         # Wenn kein Datum oder Bild in der Übersicht: hole Metadaten von der Artikel-Seite
@@ -249,15 +280,51 @@ if soup:
 
         block_soup = BeautifulSoup(html_block, 'html.parser')
 
-        # Für das Logging mitschreiben
-        date_str_log = pub_date.strftime('%Y-%m-%d %H:%M:%S %z') if pub_date else "KEIN DATUM"
-        log_entries.append(f"[{date_str_log}] {title_text} | Bild: {'JA' if image_url else 'NEIN'}")
-
         # Extrahiere Text für Beschreibung
         full_text = block_soup.text.strip()
         desc_text = re.sub(r'\s+', ' ', full_text).strip()
         if not desc_text:
             desc_text = title_text
+
+        # Füge Artikel zur temporären Liste hinzu
+        collected.append({
+            'title': title_text,
+            'link': link,
+            'pub_date': pub_date,
+            'image_url': image_url,
+            'desc': desc_text,
+        })
+
+        count += 1
+
+    print(f"\n✓ Insgesamt {len(collected)} Artikel gesammelt (unzensiert)")
+
+# Sortiere nach Datum: neu -> alt. Artikel ohne Datum zuletzt.
+if collected:
+    epoch = datetime(1970, 1, 1).replace(tzinfo=LOCAL_TZ)
+    collected.sort(key=lambda e: e['pub_date'] or epoch, reverse=True)
+    # Beschränke auf 20 Einträge
+    collected = collected[:20]
+
+    # Erstelle Feed-Einträge in der gewünschten Reihenfolge
+    for item in collected:
+        title_text = item['title']
+        link = item['link']
+        pub_date = item['pub_date']
+        image_url = item['image_url']
+        desc_text = item['desc']
+
+        # Für das Logging: Bildname extrahieren
+        if image_url:
+            try:
+                image_name = os.path.basename(urlparse(image_url).path) or 'UNKNOWN'
+            except Exception:
+                image_name = 'UNKNOWN'
+        else:
+            image_name = 'KEIN_BILD'
+
+        date_str_log = pub_date.strftime('%Y-%m-%d %H:%M:%S %z') if pub_date else "KEIN DATUM"
+        log_entries.append(f"[{date_str_log}] {title_text} | Bild: {image_name} | URL: {image_url or 'KEIN_BILD'}")
 
         # Erstelle Feed-Entry
         fe = fg.add_entry()
@@ -279,15 +346,16 @@ if soup:
         if image_url:
             fe.description(f'<img src="{image_url}" style="max-width:100%; height:auto;"/><br/><br/>{desc_content}')
             try:
-                fe.enclosure(image_url, 0, 'image/jpeg')
+                # Bestimme MIME-Typ aus Dateiendung
+                mime, _ = mimetypes.guess_type(image_url)
+                mime = mime or 'image/jpeg'
+                fe.enclosure(image_url, 0, mime)
             except Exception:
                 pass  # Enklosing ist optional
         else:
             fe.description(desc_content)
 
-        count += 1
-
-    print(f"\n✓ Insgesamt {count} Artikel verarbeitet")
+    print(f"\n✓ Insgesamt {len(collected)} Artikel dem Feed hinzugefügt")
 
 # Fallback: Wenn keine Artikel gefunden wurden
 if len(fg.entry()) == 0:
