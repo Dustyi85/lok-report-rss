@@ -261,18 +261,20 @@ if soup:
                         print(f"  → Bild (Übersicht) hinzugefügt: {abs_src[:60]}...")
             next_node = next_node.find_next_sibling()
 
-        # Wenn kein Datum oder Bild in der Übersicht: hole Metadaten von der Artikel-Seite
-        if not pub_date or not image_urls:
-            print(f"  → Fetche Metadaten von Artikel-Seite...")
-            meta_images, meta_date = fetch_article_metadata(link, headers)
-            # meta_images ist eine Liste
-            for mi in meta_images:
-                if mi not in image_urls:
-                    image_urls.append(mi)
-                    print(f"  → Bild gefunden (Artikel-Seite): {mi[:60]}...")
-            if meta_date and not pub_date:
-                pub_date = meta_date
-                print(f"  → Datum gefunden (Artikel-Seite): {pub_date}")
+        # Hole IMMER Metadaten von der Artikel-Seite (für Datum und zusätzliche Bilder)
+        print(f"  → Fetche Metadaten von Artikel-Seite...")
+        meta_images, meta_date = fetch_article_metadata(link, headers)
+        
+        # Ergänze Bilder von Artikel-Seite
+        for mi in meta_images:
+            if mi not in image_urls:
+                image_urls.append(mi)
+                print(f"  → Bild gefunden (Artikel-Seite): {mi[:60]}...")
+        
+        # Nutze Datum von Artikel-Seite, falls auf Übersichtsseite keins gefunden wurde
+        if meta_date and not pub_date:
+            pub_date = meta_date
+            print(f"  → Datum gefunden (Artikel-Seite): {pub_date}")
 
         block_soup = BeautifulSoup(html_block, 'html.parser')
 
