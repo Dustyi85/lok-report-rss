@@ -1,6 +1,7 @@
-=== LOG DURCHLAUF VOM 2026-07-24 03:53:37 ===
+=== LOG DURCHLAUF VOM 2026-07-24 07:42:06 ===
 Artikel insgesamt: 20
 
+[2026-07-24 07:00:00 +0200] Australien: Bechtel ist Umsetzungspartner für die Hochgeschwindigkeitsbahnstrecke zwischen Newcastle und Sydney | Bilder: wl2qir.jpg,edvxxlfk9y49.jpg | URLs: https://lok-report.de/images/news/news_2026_29/wl2qir.jpg,https://lok-report.de/images/news/news_2026_29/edvxxlfk9y49.jpg
 [2026-07-23 18:40:00 +0200] NRW: SWB Bus und Bahn setzt auf maximale Transparenz und Sicherheit | Bilder: swbmm.jpg | URLs: https://lok-report.de/images/news/news_2026_29/swbmm.jpg
 [2026-07-23 18:10:00 +0200] Baden-Württemberg: Staatsanwaltschaft legt Beschwerde gegen Ablehnung von Haftbefehlsantrag ein | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-07-23 18:00:00 +0200] ICE nach Oberstdorf, die ersten Tage | Bilder: dsc_9905.jpga.jpgb.jpg,dsc_9751.jpga.jpg,dsc_9892.jpga.jpgb.jpgc.jpg,dsc_9889.jpg | URLs: https://lok-report.de/images/news/news_2026_29/dsc_9905.jpga.jpgb.jpg,https://lok-report.de/images/news/news_2026_29/dsc_9751.jpga.jpg,https://lok-report.de/images/news/news_2026_29/dsc_9892.jpga.jpgb.jpgc.jpg,https://lok-report.de/images/news/news_2026_29/dsc_9889.jpg
@@ -20,4 +21,3 @@ Artikel insgesamt: 20
 [2026-07-23 11:00:00 +0200] Großbritannien: Einwohner des Londoner Stadtteils Wandsworth sind empört über die "grell" gestaltete Neugestaltung einer Eisenbahnbrücke | Bilder: East_Putney_1.jpg,East_Putney_2.jpg,East_Putney_4.jpg,East_Putney_3.jpg,east-putney-bridges-website-umbraco-template-800-x-533px.jpg | URLs: https://lok-report.de/images/news/news_2026_29/East_Putney_1.jpg,https://lok-report.de/images/news/news_2026_29/East_Putney_2.jpg,https://lok-report.de/images/news/news_2026_29/East_Putney_4.jpg,https://lok-report.de/images/news/news_2026_29/East_Putney_3.jpg,https://lok-report.de/images/news/news_2026_29/east-putney-bridges-website-umbraco-template-800-x-533px.jpg
 [2026-07-23 10:45:00 +0200] Alpha Trains/Talbot Services: Ausbau der strategische Partnerschaft für Instandhaltung und Modernisierung von Schienenfahrzeugen | Bilder: at-image002.jpg,at-image003.jpg,at-image004.jpg | URLs: https://lok-report.de/images/news/news_2026_29/at-image002.jpg,https://lok-report.de/images/news/news_2026_29/at-image003.jpg,https://lok-report.de/images/news/news_2026_29/at-image004.jpg
 [2026-07-23 10:30:00 +0200] Trafag: Der Schlüssel zum Smart Train | Bilder: trafag_pjm_01.jpg,image002.jpg | URLs: https://lok-report.de/images/news/news_2026_29/trafag_pjm_01.jpg,https://lok-report.de/images/news/news_2026_29/image002.jpg
-[2026-07-23 10:15:00 +0200] Vossloh: Rekordauftragsbestand zum Halbjahr 2026 unterstreicht anhaltend dynamisches Marktumfeld | Bilder: KEIN_BILD | URLs: KEIN_BILD
