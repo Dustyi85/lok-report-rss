@@ -1,6 +1,8 @@
-=== LOG DURCHLAUF VOM 2026-07-25 17:58:01 ===
+=== LOG DURCHLAUF VOM 2026-07-25 20:55:17 ===
 Artikel insgesamt: 20
 
+[2026-07-25 18:30:00 +0200] Wochenend- Pendelverkehr | Bilder: p1090437.jpg,img_20260719_155545_703.jpg,img_20260719_153602_254.jpg,p1090441.jpg,p1090451.jpg,p1090452.jpg,p1090465.jpg,p1090481.jpg,p1090420.jpg,p1090422.jpg | URLs: https://lok-report.de/images/news/news_2026_29/p1090437.jpg,https://lok-report.de/images/news/news_2026_29/img_20260719_155545_703.jpg,https://lok-report.de/images/news/news_2026_29/img_20260719_153602_254.jpg,https://lok-report.de/images/news/news_2026_29/p1090441.jpg,https://lok-report.de/images/news/news_2026_29/p1090451.jpg,https://lok-report.de/images/news/news_2026_29/p1090452.jpg,https://lok-report.de/images/news/news_2026_29/p1090465.jpg,https://lok-report.de/images/news/news_2026_29/p1090481.jpg,https://lok-report.de/images/news/news_2026_29/p1090420.jpg,https://lok-report.de/images/news/news_2026_29/p1090422.jpg
+[2026-07-25 18:00:00 +0200] In Memoriam D 502 | Bilder: 20260725_103902.jpg | URLs: https://lok-report.de/images/news/news_2026_29/20260725_103902.jpg
 [2026-07-25 17:30:00 +0200] Großbritannien: Feuer im Bahnhof Paignton macht diesen unerreichbar | Bilder: gwr-143611-paignton-18-08-27.jpg | URLs: https://lok-report.de/images/news/news_2026_29/gwr-143611-paignton-18-08-27.jpg
 [2026-07-25 17:00:00 +0200] Saarland: Initiative fordert Übernahme der Ostertalbahn durch das Saarland | Bilder: köf-11098-mit-sonderzug-im-ostertal--haupersweiler-viadukt-27.08.2016pskl.jpg,_d1a6229_1.jpg | URLs: https://lok-report.de/images/news/news_2026_29/köf-11098-mit-sonderzug-im-ostertal--haupersweiler-viadukt-27.08.2016pskl.jpg,https://lok-report.de/images/news/news_2026_29/_d1a6229_1.jpg
 [2026-07-25 16:30:00 +0200] Ehemaliger Stuttgarter S-Bahn-Zug kehrt im Oktober erstmals in seine frühere Heimat zurück | Bilder: 420-984.jpg,bw5.jpg | URLs: https://lok-report.de/images/news/news_2026_29/420-984.jpg,https://lok-report.de/images/news/news_2026_29/bw5.jpg
@@ -19,5 +21,3 @@ Artikel insgesamt: 20
 [2026-07-24 15:00:00 +0200] Österreich: Real Madrid in Klagenfurt - Westbahn macht Extra-Stopps für Fußballfans | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-07-24 14:29:00 +0200] NRW: Bauzug entgleist | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-07-24 14:13:00 +0200] Bayern: Lehrgang „Kommunales Mobilitätsmanagement“ geht in die zweite Runde | Bilder: KEIN_BILD | URLs: KEIN_BILD
-[2026-07-24 14:09:00 +0200] 150 Jahre Tram - MVG-Audioguide zur Geschichte der Münchner Tram | Bilder: sprecher-1.jpg,appicon.jpg,sprecher-2.jpg,sprecher-3.jpg,tram-netz.jpg | URLs: https://lok-report.de/images/news/news_2026_29/sprecher-1.jpg,https://lok-report.de/images/news/news_2026_29/appicon.jpg,https://lok-report.de/images/news/news_2026_29/sprecher-2.jpg,https://lok-report.de/images/news/news_2026_29/sprecher-3.jpg,https://lok-report.de/images/news/news_2026_29/tram-netz.jpg
-[2026-07-24 13:42:00 +0200] Bayern: DB InfraGO stabilisiert Hangbereich bei Icking | Bilder: db-hang.jpg | URLs: https://lok-report.de/images/news/news_2026_29/db-hang.jpg
