@@ -1,6 +1,8 @@
-=== LOG DURCHLAUF VOM 2026-07-30 18:21:22 ===
+=== LOG DURCHLAUF VOM 2026-07-30 21:11:48 ===
 Artikel insgesamt: 20
 
+[2026-07-30 19:00:00 +0200] Bayern: Zehn Jahre C2 - MVG nimmt letzten Zug der Serie in Betrieb | Bilder: letzter-c2.jpg | URLs: https://lok-report.de/images/news/news_2026_30/letzter-c2.jpg
+[2026-07-30 18:30:00 +0200] Bayern/Tschechien: Zuschlag für Übergangsvertrag München–Praha erneut an Länderbahn erteilt | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-07-30 18:13:00 +0200] Kandertalbahn fährt ohne Dampflok | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-07-30 18:00:00 +0200] Vorletztes Jahr | Bilder: mcccxliv-img_0426.jpg | URLs: https://lok-report.de/images/news/news_2026_30/mcccxliv-img_0426.jpg
 [2026-07-30 17:00:00 +0200] Historischer Bahnbetrieb Bergen auf Rügen nach Lauterbach | Bilder: 1000076071.jpg,1000076068.jpg,1000076067.jpg,1000076100.jpg,1000076098.jpg | URLs: https://lok-report.de/images/news/news_2026_30/1000076071.jpg,https://lok-report.de/images/news/news_2026_30/1000076068.jpg,https://lok-report.de/images/news/news_2026_30/1000076067.jpg,https://lok-report.de/images/news/news_2026_30/1000076100.jpg,https://lok-report.de/images/news/news_2026_30/1000076098.jpg
@@ -19,5 +21,3 @@ Artikel insgesamt: 20
 [2026-07-30 13:43:00 +0200] VDV: Branchenverband dankt Schnieder, gratuliert Bilger | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-07-30 13:40:00 +0200] Berlin: Sanierung der U6 auf der Zielgeraden – das Eröffnungsdatum steht | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-07-30 13:30:00 +0200] Baden-Württemberg: Vergabeverfahren für einen neuen S-Bahn-Vertrag ab 2035 | Bilder: sbahnst.jpg | URLs: https://lok-report.de/images/news/news_2026_30/sbahnst.jpg
-[2026-07-30 13:20:00 +0200] Amtsübergabe im Bundesministerium für Verkehr | Bilder: 070-amtsuebergabe-(1).jpg | URLs: https://lok-report.de/images/news/news_2026_30/070-amtsuebergabe-(1).jpg
-[2026-07-30 13:10:00 +0200] Österreich: Gewerkschaft vida pocht auf rasche Umsetzung des vereinbarten 10-Punkte-Plans zum Schutz des Bahnpersonals | Bilder: KEIN_BILD | URLs: KEIN_BILD
