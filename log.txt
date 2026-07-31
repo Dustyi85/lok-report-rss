@@ -1,6 +1,7 @@
-=== LOG DURCHLAUF VOM 2026-07-31 03:58:35 ===
+=== LOG DURCHLAUF VOM 2026-07-31 07:57:36 ===
 Artikel insgesamt: 20
 
+[2026-07-31 07:00:00 +0200] Vereinigte Staaten: Absichtserklärung zur Vernetzung der Hochgeschwindigkeitsstrecke mit Los Angeles und Brightline West | Bilder: cal-1.jpg,cal-2.jpg,cal-3.jpg,cal-4.jpg,cal1.jpg | URLs: https://lok-report.de/images/news/news_2026_30/cal-1.jpg,https://lok-report.de/images/news/news_2026_30/cal-2.jpg,https://lok-report.de/images/news/news_2026_30/cal-3.jpg,https://lok-report.de/images/news/news_2026_30/cal-4.jpg,https://lok-report.de/images/news/news_2026_30/cal1.jpg
 [2026-07-30 19:00:00 +0200] Bayern: Zehn Jahre C2 - MVG nimmt letzten Zug der Serie in Betrieb | Bilder: letzter-c2.jpg | URLs: https://lok-report.de/images/news/news_2026_30/letzter-c2.jpg
 [2026-07-30 18:30:00 +0200] Bayern/Tschechien: Zuschlag für Übergangsvertrag München–Praha erneut an Länderbahn erteilt | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-07-30 18:13:00 +0200] Kandertalbahn fährt ohne Dampflok | Bilder: KEIN_BILD | URLs: KEIN_BILD
@@ -20,4 +21,3 @@ Artikel insgesamt: 20
 [2026-07-30 13:50:00 +0200] Brandenburg: Robert Crumbach gratuliert Bundesverkehrsminister Steffen Bilger und erhebt Forderungen an den Bund | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-07-30 13:43:00 +0200] VDV: Branchenverband dankt Schnieder, gratuliert Bilger | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-07-30 13:40:00 +0200] Berlin: Sanierung der U6 auf der Zielgeraden – das Eröffnungsdatum steht | Bilder: KEIN_BILD | URLs: KEIN_BILD
-[2026-07-30 13:30:00 +0200] Baden-Württemberg: Vergabeverfahren für einen neuen S-Bahn-Vertrag ab 2035 | Bilder: sbahnst.jpg | URLs: https://lok-report.de/images/news/news_2026_30/sbahnst.jpg
