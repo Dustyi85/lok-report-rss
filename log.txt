@@ -1,6 +1,7 @@
-=== LOG DURCHLAUF VOM 2026-08-04 03:44:51 ===
+=== LOG DURCHLAUF VOM 2026-08-04 07:40:53 ===
 Artikel insgesamt: 20
 
+[2026-08-04 07:00:00 +0200] Japan/Taiwan: Die neue Generation der N700ST-Züge der Taiwan High Speed Rail verlässt feierlich das Werk | Bilder: download-(8).jpg,download-(9).jpg,download-(10).jpg,download-(11).jpg | URLs: https://lok-report.de/images/news/news_2026_31/download-(8).jpg,https://lok-report.de/images/news/news_2026_31/download-(9).jpg,https://lok-report.de/images/news/news_2026_31/download-(10).jpg,https://lok-report.de/images/news/news_2026_31/download-(11).jpg
 [2026-08-03 17:00:00 +0200] Tschechien: Arriva 628 um Staré Splavy | Bilder: 2026-07-29_arriva-628_a_staré-splavy_v1.jpg,2026-07-29_arriva-628_b_jestrebi_v4.jpg | URLs: https://lok-report.de/images/news/news_2026_31/2026-07-29_arriva-628_a_staré-splavy_v1.jpg,https://lok-report.de/images/news/news_2026_31/2026-07-29_arriva-628_b_jestrebi_v4.jpg
 [2026-08-03 16:40:00 +0200] Sachsen: Mit der Vogtlandbahn an diesem Wochenende zum Syrauer Höhlenfest | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-08-03 16:20:00 +0200] Bayern: Fahrgastbeirat der BRB stellt sich neu auf | Bilder: KEIN_BILD | URLs: KEIN_BILD
@@ -20,4 +21,3 @@ Artikel insgesamt: 20
 [2026-08-03 11:30:00 +0200] UIC: Gianpiero Strisciuglio (FS Group) zum neuen stellvertretenden Vorsitzenden der UIC und Vorsitzenden der UIC-Region Europa ernannt | Bilder: uic.jpg | URLs: https://lok-report.de/images/news/news_2026_31/uic.jpg
 [2026-08-03 11:15:00 +0200] Hitachi Rail: Informationen und Präzisierungen zum Bericht über Kapazitätseinschränkungen im Bereich Hamburg-Eidelstedt | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-08-03 11:00:00 +0200] RCG: 500 moderne Güterwagen für Schrott- und Recyclingtransporte | Bilder: öbb-rcg-leichtschrottwagen(1).jpg,öbb-rcg-leichtschrottwagen(2).jpg,öbb-rcg-leichtschrottwagen.jpg | URLs: https://lok-report.de/images/news/news_2026_31/öbb-rcg-leichtschrottwagen(1).jpg,https://lok-report.de/images/news/news_2026_31/öbb-rcg-leichtschrottwagen(2).jpg,https://lok-report.de/images/news/news_2026_31/öbb-rcg-leichtschrottwagen.jpg
-[2026-08-03 10:45:00 +0200] Österreich: Was ist mit Klima, Frau Sima? | Bilder: KEIN_BILD | URLs: KEIN_BILD
