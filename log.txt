@@ -1,6 +1,7 @@
-=== LOG DURCHLAUF VOM 2026-08-05 03:46:54 ===
+=== LOG DURCHLAUF VOM 2026-08-05 07:38:01 ===
 Artikel insgesamt: 20
 
+[2026-08-05 07:00:00 +0200] Kenia: Die Kreisverwaltung von Nairobi genehmigt Phase I des Nairobi Metropolitan Mass Rapid Transit System (NMRTS) | Bilder: nairobi-1.jpg,nairobi-2.jpg,nairobi-3.jpg,nairobi-4.jpg | URLs: https://lok-report.de/images/news/news_2026_30/nairobi-1.jpg,https://lok-report.de/images/news/news_2026_30/nairobi-2.jpg,https://lok-report.de/images/news/news_2026_30/nairobi-3.jpg,https://lok-report.de/images/news/news_2026_30/nairobi-4.jpg
 [2026-08-04 17:00:00 +0200] 175 Jahre Bahnhof Guntershausen | Bilder: dsc07349_-guntershausen-175-jahre-bahnhof.jpg | URLs: https://lok-report.de/images/news/news_2026_31/dsc07349_-guntershausen-175-jahre-bahnhof.jpg
 [2026-08-04 16:00:00 +0200] ÖBB im Hohen Norden | Bilder: 20260803_144834.jpg | URLs: https://lok-report.de/images/news/news_2026_31/20260803_144834.jpg
 [2026-08-04 15:30:00 +0200] Auch ein 100-jähriger Omnibus bei der Bahnhofshocketse Neresheim | Bilder: 2021-08-08_hocketset33renault1927bus_waltergekeler.jpg,2021-08-08renault1927buspia_radlerwaltergekeler.jpg | URLs: https://lok-report.de/images/news/news_2026_31/2021-08-08_hocketset33renault1927bus_waltergekeler.jpg,https://lok-report.de/images/news/news_2026_31/2021-08-08renault1927buspia_radlerwaltergekeler.jpg
@@ -20,4 +21,3 @@ Artikel insgesamt: 20
 [2026-08-04 09:36:00 +0200] Hessen: Smart Train Lease erhält Direktauftrag von DB Regio zur Bereitstellung von BEMU für das Nordwesthessen-Netz | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-08-04 09:34:00 +0200] Polen: Woiwodschaft Westpommern schreibt brandneue elektrische Triebzüge aus | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-08-04 09:32:00 +0200] Italien: RFI schreibt Flachwagen aus | Bilder: KEIN_BILD | URLs: KEIN_BILD
-[2026-08-04 09:30:00 +0200] Polen: PKP Intercity mietet bis zu 5 Diesellokomoiven von PESA | Bilder: KEIN_BILD | URLs: KEIN_BILD
