@@ -1,4 +1,4 @@
-=== LOG DURCHLAUF VOM 2026-08-12 20:51:02 ===
+=== LOG DURCHLAUF VOM 2026-08-12 23:36:33 ===
 Artikel insgesamt: 20
 
 [2026-08-12 18:00:00 +0200] 112 481 mit 111-Überführung | Bilder: 112-481-schloss-neuenburg.jpg,112-481-ort-kleinjena.jpg | URLs: https://lok-report.de/images/news/news_2026_32/112-481-schloss-neuenburg.jpg,https://lok-report.de/images/news/news_2026_32/112-481-ort-kleinjena.jpg
