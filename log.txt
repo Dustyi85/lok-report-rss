@@ -1,6 +1,7 @@
-=== LOG DURCHLAUF VOM 2026-08-19 20:21:17 ===
+=== LOG DURCHLAUF VOM 2026-08-19 23:17:38 ===
 Artikel insgesamt: 20
 
+[2026-08-19 20:25:00 +0200] Norwegen: Blick in den Flirt Nordic Express | Bilder: N12_001_1.jpg,Liegesitze_N12_001.jpg,Bistro_N12_001.jpg,Front_FlirtNordicExpress.jpg | URLs: https://lok-report.de/images/news/news_2026_33/N12_001_1.jpg,https://lok-report.de/images/news/news_2026_33/Liegesitze_N12_001.jpg,https://lok-report.de/images/news/news_2026_33/Bistro_N12_001.jpg,https://lok-report.de/images/news/news_2026_33/Front_FlirtNordicExpress.jpg
 [2026-08-19 17:00:00 +0200] Darf es etwas Harzquerbahn sein?? | Bilder: 2026-08-16_0071=lok-199-872-im-bf-wgd-westerntor=steimeckejürgen.jpg,2026-08-16_0080=lok-99-7237-im-bf-wgd-westerntor=steimeckejürgen.jpg | URLs: https://lok-report.de/images/news/news_2026_33/2026-08-16_0071=lok-199-872-im-bf-wgd-westerntor=steimeckejürgen.jpg,https://lok-report.de/images/news/news_2026_33/2026-08-16_0080=lok-99-7237-im-bf-wgd-westerntor=steimeckejürgen.jpg
 [2026-08-19 16:49:00 +0200] Rheinland-Pfalz: Ersatzverkehr zwischen Landau, Kandel und dem Queichtal angelaufen | Bilder: 025-Ersatzverkehr-Kandel-.jpg | URLs: https://lok-report.de/images/news/news_2026_33/025-Ersatzverkehr-Kandel-.jpg
 [2026-08-19 16:00:00 +0200] Rund um Leipzig | Bilder: tl-19-1.jpg,tl-19-2.jpg,tl-19-3.jpg,tl-19-4.jpg,tl-19-5.jpg,tl-19-6.jpg | URLs: https://lok-report.de/images/news/news_2026_33/tl-19-1.jpg,https://lok-report.de/images/news/news_2026_33/tl-19-2.jpg,https://lok-report.de/images/news/news_2026_33/tl-19-3.jpg,https://lok-report.de/images/news/news_2026_33/tl-19-4.jpg,https://lok-report.de/images/news/news_2026_33/tl-19-5.jpg,https://lok-report.de/images/news/news_2026_33/tl-19-6.jpg
@@ -20,4 +21,3 @@ Artikel insgesamt: 20
 [2026-08-19 11:00:00 +0200] HGK-Gruppe: Ausbau des Logistikstandorts im Hamburger Hafen | Bilder: 2026-08-19-PM-HGK-LI-Standort-Hamburg-Neubau-Grafik-1-©-Four-Parx-(2).jpg,2026-08-19-PM-HGK-LI-Standort-Hamburg-Neubau-Grafik-2-©-Four-Parx.jpg | URLs: https://lok-report.de/images/news/news_2026_33/2026-08-19-PM-HGK-LI-Standort-Hamburg-Neubau-Grafik-1-©-Four-Parx-(2).jpg,https://lok-report.de/images/news/news_2026_33/2026-08-19-PM-HGK-LI-Standort-Hamburg-Neubau-Grafik-2-©-Four-Parx.jpg
 [2026-08-19 10:45:00 +0200] Allianz pro Schiene: Fünf Ziele für den Bundesverkehrsminister | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-08-19 10:30:00 +0200] Griechenland: Weiteres Bussgeld gegen das EVU Hellenic Train im Zusammenhang mit dem Unfall von Evangelismos/Tempi | Bilder: KEIN_BILD | URLs: KEIN_BILD
-[2026-08-19 10:15:00 +0200] Sachsen: Schienenmaut darf nicht zum Fahrplan-Killer werden | Bilder: KEIN_BILD | URLs: KEIN_BILD
