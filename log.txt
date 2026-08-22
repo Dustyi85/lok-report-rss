@@ -1,6 +1,7 @@
-=== LOG DURCHLAUF VOM 2026-08-22 14:21:00 ===
+=== LOG DURCHLAUF VOM 2026-08-22 17:12:41 ===
 Artikel insgesamt: 20
 
+[2026-08-22 15:00:00 +0200] NRW: Planfeststellungsbeschlüsse für zwei von vier Bauabschnitten für das Ausbauprojekt S 11 | Bilder: koeln.jpg | URLs: https://lok-report.de/images/news/news_2026_33/koeln.jpg
 [2026-08-22 14:00:00 +0200] Brandenburg: Ab 25. August wieder ohne Umstieg zwischen Frankfurt (Oder) und Berlin | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-08-22 13:00:00 +0200] Goslar-Oker | Bilder: image4.jpg,image3.jpg,image2.jpg,image1.jpg | URLs: https://lok-report.de/images/news/news_2026_33/image4.jpg,https://lok-report.de/images/news/news_2026_33/image3.jpg,https://lok-report.de/images/news/news_2026_33/image2.jpg,https://lok-report.de/images/news/news_2026_33/image1.jpg
 [2026-08-22 12:00:00 +0200] Spanien: Hafenbahn A Coruña | Bilder: 1000102461.jpg,1000102964.jpg,1000102433.jpg,1000102435.jpg | URLs: https://lok-report.de/images/news/news_2026_33/1000102461.jpg,https://lok-report.de/images/news/news_2026_33/1000102964.jpg,https://lok-report.de/images/news/news_2026_33/1000102433.jpg,https://lok-report.de/images/news/news_2026_33/1000102435.jpg
@@ -20,4 +21,3 @@ Artikel insgesamt: 20
 [2026-08-21 13:30:00 +0200] Die Güterbahnen: DB InfraGO dreht weiter an der Preisschraube nach oben | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-08-21 13:24:00 +0200] Sachsen-Anhalt: 11 Millionen Euro für Sanierung der Brockenstrecke | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-08-21 13:20:00 +0200] Schweiz: Die TPF beauftragen Stadler mit der Herstellung von 13 FLIRT Evo-Triebzügen | Bilder: Photo-signature.jpg,20260821_Flirt_TPF_Fribourg_01.jpg,20260821_Flirt_TPF_Fribourg_innen_2Klasse.jpg,20260821_Flirt_TPF_Fribourg_innen_1Klasse.jpg | URLs: https://lok-report.de/images/news/news_2026_33/Photo-signature.jpg,https://lok-report.de/images/news/news_2026_33/20260821_Flirt_TPF_Fribourg_01.jpg,https://lok-report.de/images/news/news_2026_33/20260821_Flirt_TPF_Fribourg_innen_2Klasse.jpg,https://lok-report.de/images/news/news_2026_33/20260821_Flirt_TPF_Fribourg_innen_1Klasse.jpg
-[2026-08-21 13:19:00 +0200] Hamburg: Machbarkeitsuntersuchung zur U5-Verlängerung nach Schenefeld | Bilder: KEIN_BILD | URLs: KEIN_BILD
