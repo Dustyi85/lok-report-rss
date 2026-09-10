@@ -1,6 +1,13 @@
-=== LOG DURCHLAUF VOM 2026-09-10 04:15:22 ===
+=== LOG DURCHLAUF VOM 2026-09-10 09:40:20 ===
 Artikel insgesamt: 20
 
+[2026-09-10 09:36:00 +0200] Baden-Württemberg/Grand Est/Rheinland-Pfalz/Saarland: Direktvergabe zur Verlängerung der Verkehrsverträge der grenzüberschreitenden RB 52 und 53 an die DB Regio AG | Bilder: KEIN_BILD | URLs: KEIN_BILD
+[2026-09-10 09:34:00 +0200] DB InfraGO: Direktvergabe für IFO-Fahrzeuge an die GBM Gleisbaumechanik Brandenburg/H. | Bilder: KEIN_BILD | URLs: KEIN_BILD
+[2026-09-10 09:32:00 +0200] Rumänien: Colterm schreibt Braunkohletransporte aus | Bilder: KEIN_BILD | URLs: KEIN_BILD
+[2026-09-10 09:30:00 +0200] Hamburg: Ankündigung einer Markterkundung zur Herstellerinstandhaltung S-Bahn-Fahrzeuge | Bilder: KEIN_BILD | URLs: KEIN_BILD
+[2026-09-10 09:00:00 +0200] Großbritannien: Schottland erhält einen neuen Bahnhof im Großraum Glasgow | Bilder: 21780338-Credit-NR.jpg,f5bc92e7a2be49809bf4795db214b83c.jpg | URLs: https://lok-report.de/images/news/news_2026_36/21780338-Credit-NR.jpg,https://lok-report.de/images/news/news_2026_36/f5bc92e7a2be49809bf4795db214b83c.jpg
+[2026-09-10 08:00:00 +0200] Polen: PKP Intercity nutzt die Option auf 32 Griffin-200-Lokomotiven | Bilder: PKP_Intercity_08.09.2026.jpg | URLs: https://lok-report.de/images/news/news_2026_36/PKP_Intercity_08.09.2026.jpg
+[2026-09-10 07:00:00 +0200] Indonesien: Der Staat übernimmt die Kontrolle über das von China finanzierte Hochgeschwindigkeitsprojekt "Whoosh" | Bilder: ind-kai-3.jpg,ind-kai-2.jpg,ind-1.jpg | URLs: https://lok-report.de/images/news/news_2026_36/ind-kai-3.jpg,https://lok-report.de/images/news/news_2026_36/ind-kai-2.jpg,https://lok-report.de/images/news/news_2026_36/ind-1.jpg
 [2026-09-09 19:21:00 +0200] Polen: Schwerer Bü-Unfall mit zwei Todesopfern | Bilder: pl-9.jpg,pl-5.jpg,pl-3.jpg,pl-4.jpg,pl-6.jpg,pl-1.jpg,pl-8.jpg,pl-2.jpg | URLs: https://lok-report.de/images/news/news_2026_36/pl-9.jpg,https://lok-report.de/images/news/news_2026_36/pl-5.jpg,https://lok-report.de/images/news/news_2026_36/pl-3.jpg,https://lok-report.de/images/news/news_2026_36/pl-4.jpg,https://lok-report.de/images/news/news_2026_36/pl-6.jpg,https://lok-report.de/images/news/news_2026_36/pl-1.jpg,https://lok-report.de/images/news/news_2026_36/pl-8.jpg,https://lok-report.de/images/news/news_2026_36/pl-2.jpg
 [2026-09-09 18:00:00 +0200] Herbstzeit - Sonderzugzeit | Bilder: IMG_7756-2026-09-06-188-144-Duisburg-Foto-Martin-Wehmeyer.jpg,IMG_7761-2026-09-06-101-133-Duisburg-Foto-Martin-Wehmeyer.jpg,IMG_7765.jpg,IMG_7755-2026-09-06-402-022-ICE548-Duisburg-Foto-Martin-Wehmeyer.jpg | URLs: https://lok-report.de/images/news/news_2026_36/IMG_7756-2026-09-06-188-144-Duisburg-Foto-Martin-Wehmeyer.jpg,https://lok-report.de/images/news/news_2026_36/IMG_7761-2026-09-06-101-133-Duisburg-Foto-Martin-Wehmeyer.jpg,https://lok-report.de/images/news/news_2026_36/IMG_7765.jpg,https://lok-report.de/images/news/news_2026_36/IMG_7755-2026-09-06-402-022-ICE548-Duisburg-Foto-Martin-Wehmeyer.jpg
 [2026-09-09 17:00:00 +0200] Ersatzverkehr SBH mit WFL 243 019 und SRI-Park | Bilder: 2026-09-07_1_WFL-243-019_HBGD_V2.jpg | URLs: https://lok-report.de/images/news/news_2026_36/2026-09-07_1_WFL-243-019_HBGD_V2.jpg
@@ -14,10 +21,3 @@ Artikel insgesamt: 20
 [2026-09-09 14:27:00 +0200] VDV-Akademie: Gesamtkatalog 2026 mit Fokus auf Transformation und Fachkräftesicherung | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-09-09 14:20:00 +0200] NRW: Offenlage der Unterlagen zum RRX-Ausbau Arnsberg | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-09-09 14:10:00 +0200] Die Güterbahnen:  Pläne zur Korridorsanierung Berlin–Lehrte vollständig abgelehnt | Bilder: KEIN_BILD | URLs: KEIN_BILD
-[2026-09-09 14:06:00 +0200] Bayern: Oktoberfest 2026 - Der MVG-Einsatz in Zahlen | Bilder: okt.jpg | URLs: https://lok-report.de/images/news/news_2026_36/okt.jpg
-[2026-09-09 14:00:00 +0200] Sachsen: Schmalspurbahn-Festival auf der Lößnitzgrundbahn | Bilder: KEIN_BILD | URLs: KEIN_BILD
-[2026-09-09 13:50:00 +0200] Bremen: Senat beschließt Ausbau des Bremerhavener Überseehafens | Bilder: KEIN_BILD | URLs: KEIN_BILD
-[2026-09-09 13:45:00 +0200] Rheinland-Pfalz: Hunsrückquerbahn wird auf Wiederinbetriebnahme vorbereitet | Bilder: KEIN_BILD | URLs: KEIN_BILD
-[2026-09-09 13:40:00 +0200] Berlin: Schülerausweis mit kostenlosem Nahverkehrsticket vorgestellt – Pilotprojekt an 10 Schulen läuft | Bilder: KEIN_BILD | URLs: KEIN_BILD
-[2026-09-09 13:30:00 +0200] Bundestag: Planungsstand bei der Freiburger Güterumgehungsbahn | Bilder: KEIN_BILD | URLs: KEIN_BILD
-[2026-09-09 13:25:00 +0200] Bundestag: Regierung informiert über im Bau befindliche Bahnprojekte | Bilder: KEIN_BILD | URLs: KEIN_BILD
