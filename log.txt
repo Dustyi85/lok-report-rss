@@ -1,6 +1,13 @@
-=== LOG DURCHLAUF VOM 2026-09-18 04:20:44 ===
+=== LOG DURCHLAUF VOM 2026-09-18 09:47:12 ===
 Artikel insgesamt: 20
 
+[2026-09-18 09:36:00 +0200] Tschechien: České dráhy schreibt bis zu 10 Mehrsystem-Einheiten LBK JZII aus | Bilder: KEIN_BILD | URLs: KEIN_BILD
+[2026-09-18 09:34:00 +0200] Schleswig-Holstein: Landesanstalt Schienenfahrzeuge sucht Darlehen über 70 bis 90 Mio. EUR für neue Züge | Bilder: KEIN_BILD | URLs: KEIN_BILD
+[2026-09-18 09:32:00 +0200] Spanien: Auftragsänderung zum Erwerb von Schieneninspektionszügen von Stadler Rail Valencia und MER MEC | Bilder: KEIN_BILD | URLs: KEIN_BILD
+[2026-09-18 09:30:00 +0200] Niederlande: GVB gibt Vorinformation zu einer vorherigen Marktkonsultation zum Austausch elektrischer Weichenstellvorrichtungen | Bilder: KEIN_BILD | URLs: KEIN_BILD
+[2026-09-18 09:00:00 +0200] Polen: Verschärfung der Strafen bei Überfahren eines roten Lichts an einem Bahnübergang | Bilder: 729x308.jpg | URLs: https://lok-report.de/images/news/news_2026_37/729x308.jpg
+[2026-09-18 08:00:00 +0200] Tschechien: Die Eisenbahnbrücke in Výtoň wird provisorisch mit Carbonlamellen verstärkt | Bilder: Vizualizace-nový-most-1.jpg,vyton-3.jpg,img_20210407_155626n.jpg | URLs: https://lok-report.de/images/news/news_2026_37/Vizualizace-nový-most-1.jpg,https://lok-report.de/images/news/news_2026_37/vyton-3.jpg,https://lok-report.de/images/news/news_2026_37/img_20210407_155626n.jpg
+[2026-09-18 07:00:00 +0200] Brasilien: Verkehrsministerium stellt ein Programm zur Reaktivierung von 10.000 km stillgelegter Eisenbahnstrecken und zur Errichtung von Logistikterminals vor | Bilder: bras-4.jpg,bras-3.jpg,bras-1.jpg,bras-2.jpg | URLs: https://lok-report.de/images/news/news_2026_37/bras-4.jpg,https://lok-report.de/images/news/news_2026_37/bras-3.jpg,https://lok-report.de/images/news/news_2026_37/bras-1.jpg,https://lok-report.de/images/news/news_2026_37/bras-2.jpg
 [2026-09-17 19:30:00 +0200] Bayern: Es kann losgehen! | Bilder: image0.jpg,image1.jpg,image2-(1).jpg | URLs: https://lok-report.de/images/news/news_2026_37/image0.jpg,https://lok-report.de/images/news/news_2026_37/image1.jpg,https://lok-report.de/images/news/news_2026_37/image2-(1).jpg
 [2026-09-17 19:00:00 +0200] 950 mm auf der Strecke Etzwilen – Ramsen (CH) | Bilder: IMG_1068.jpg,IMG_1061.jpg,IMG_1346.jpg | URLs: https://lok-report.de/images/news/news_2026_37/IMG_1068.jpg,https://lok-report.de/images/news/news_2026_37/IMG_1061.jpg,https://lok-report.de/images/news/news_2026_37/IMG_1346.jpg
 [2026-09-17 18:40:00 +0200] Boswil | Bilder: IMG_2699.jpg | URLs: https://lok-report.de/images/news/news_2026_37/IMG_2699.jpg
@@ -14,10 +21,3 @@ Artikel insgesamt: 20
 [2026-09-17 15:00:00 +0200] Tag der Offenen Tür Alstom (OSEF) | Bilder: bautzen.jpg | URLs: https://lok-report.de/images/news/news_2026_37/bautzen.jpg
 [2026-09-17 14:20:00 +0200] Thüringen: Fahrgäste nachts in Altenburg stehen gelassen - PRO BAHN kritisiert mangelnde Abstimmung | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-09-17 14:14:00 +0200] Baden-Württemberg: Inbetriebnahme Tunnel Rastatt - Streckenprospekt und Vorlaufbetrieb ab 23. November 2026 | Bilder: KEIN_BILD | URLs: KEIN_BILD
-[2026-09-17 14:06:00 +0200] Deutsche Bahn: Evelyn Palla zur geplanten Gesetzesänderung  zu härteren Strafen bei Gewalt gegen Bahnmitarbeiter | Bilder: KEIN_BILD | URLs: KEIN_BILD
-[2026-09-17 14:00:00 +0200] EVG: Trauer um Ulrich „Uli“ Nölkenbockhoff | Bilder: csm_26-09-15-nachruf_un-002_089741fb97.jpg | URLs: https://lok-report.de/images/news/news_2026_37/csm_26-09-15-nachruf_un-002_089741fb97.jpg
-[2026-09-17 13:55:00 +0200] EVG: Härtere Strafen für Übergriffe | Bilder: KEIN_BILD | URLs: KEIN_BILD
-[2026-09-17 13:50:00 +0200] Niedersachsen: Landesregierung kritisiert Bundespläne zur Neubaustrecke Hannover–Hamburg | Bilder: KEIN_BILD | URLs: KEIN_BILD
-[2026-09-17 13:40:00 +0200] Europäische Union: Kommission genehmigt Übernahme von HMS durch Helsana und SBB | Bilder: KEIN_BILD | URLs: KEIN_BILD
-[2026-09-17 13:30:00 +0200] Schweiz: LSVA-Revision zemen­tiert Ver­fassungs­bruch | Bilder: 260916080737_lom-1-2800x0-c-default.jpg,Fieberkurve_alpenquerende_Lkw_deu-1500x0-c-default.jpg | URLs: https://lok-report.de/images/news/news_2026_37/260916080737_lom-1-2800x0-c-default.jpg,https://lok-report.de/images/news/news_2026_37/Fieberkurve_alpenquerende_Lkw_deu-1500x0-c-default.jpg
-[2026-09-17 13:20:00 +0200] Bundestag: Keine zusätzlichen Angebote durch Mobilitätsdatenverordnung | Bilder: KEIN_BILD | URLs: KEIN_BILD
