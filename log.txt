@@ -1,6 +1,7 @@
-=== LOG DURCHLAUF VOM 2026-09-19 04:22:42 ===
+=== LOG DURCHLAUF VOM 2026-09-19 09:41:05 ===
 Artikel insgesamt: 20
 
+[2026-09-19 09:00:00 +0200] Ersatzverkehre Bonn | Bilder: FB_IMG_1789756810097.jpg | URLs: https://lok-report.de/images/news/news_2026_37/FB_IMG_1789756810097.jpg
 [2026-09-18 18:30:00 +0200] Testfahrt BR 6526 | Bilder: 20260918_144543_resized.jpg,20260918_145416_resized.jpg | URLs: https://lok-report.de/images/news/news_2026_37/20260918_144543_resized.jpg,https://lok-report.de/images/news/news_2026_37/20260918_145416_resized.jpg
 [2026-09-18 18:00:00 +0200] Düsseldorf | Bilder: 2026-09-17-Düüseldorf-Foto-Martin-Wehmeyer-(3).jpg,2026-09-17-Düüseldorf-Foto-Martin-Wehmeyer-(4).jpg,2026-09-17-Düüseldorf-Foto-Martin-Wehmeyer-(7).jpg,2026-09-17-Düüseldorf-Foto-Martin-Wehmeyer-(8).jpg | URLs: https://lok-report.de/images/news/news_2026_37/2026-09-17-Düüseldorf-Foto-Martin-Wehmeyer-(3).jpg,https://lok-report.de/images/news/news_2026_37/2026-09-17-Düüseldorf-Foto-Martin-Wehmeyer-(4).jpg,https://lok-report.de/images/news/news_2026_37/2026-09-17-Düüseldorf-Foto-Martin-Wehmeyer-(7).jpg,https://lok-report.de/images/news/news_2026_37/2026-09-17-Düüseldorf-Foto-Martin-Wehmeyer-(8).jpg
 [2026-09-18 17:20:00 +0200] Bayern/Sachsen: Tag der Schiene - Neue Priorisierung der Infrastrukturmittel als Chance für den Ausbau der Franken-Sachsen-Magistrale nutzen. | Bilder: KEIN_BILD | URLs: KEIN_BILD
@@ -20,4 +21,3 @@ Artikel insgesamt: 20
 [2026-09-18 14:10:00 +0200] Österreich: ÖBB starten Bau der Verbindungsbahn | Bilder: 20260918-öbb-0923.jpg,20260918-öbb-1128.jpg | URLs: https://lok-report.de/images/news/news_2026_37/20260918-öbb-0923.jpg,https://lok-report.de/images/news/news_2026_37/20260918-öbb-1128.jpg
 [2026-09-18 14:00:00 +0200] Ericsson: FRMCS von der Validierung zum Rollout auf der InnoTrans | Bilder: frmcs.jpg | URLs: https://lok-report.de/images/news/news_2026_37/frmcs.jpg
 [2026-09-18 13:50:00 +0200] Österreich: Gemeinsame Ausschreibung von Akku-Hybrid-Fahrzeugen für Zillertalbahn, Pinzgauer Lokalbahn und Murtalbahn | Bilder: KEIN_BILD | URLs: KEIN_BILD
-[2026-09-18 13:40:00 +0200] VDV: Steigende Dieselpreise - Entlastung für Verkehrsunternehmen | Bilder: KEIN_BILD | URLs: KEIN_BILD
