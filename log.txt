@@ -1,4 +1,4 @@
-=== LOG DURCHLAUF VOM 2026-09-29 19:20:08 ===
+=== LOG DURCHLAUF VOM 2026-09-29 23:41:28 ===
 Artikel insgesamt: 20
 
 [2026-09-29 18:30:00 +0200] Modal Group: Start der Bahnverbindung Dünkirchen-Lyon | Bilder: LOCOMOTIVE-TRAIX-@-MODAL-GROUP.jpg,TRAIN-TRAIX-LYON-DUNKERQUE-@-MODAL-GROUP.jpg,Terminal-Ferroutage-Modalis---Dunkerque-Port-2025-10-30-(55).jpg,Terminal-Ferroutage-Modalis---Dunkerque-Port-2025-10-30-(12).jpg,Carte-routes-@-DELTA-RAIL.jpg | URLs: https://lok-report.de/images/news/news_2026_39/LOCOMOTIVE-TRAIX-@-MODAL-GROUP.jpg,https://lok-report.de/images/news/news_2026_39/TRAIN-TRAIX-LYON-DUNKERQUE-@-MODAL-GROUP.jpg,https://lok-report.de/images/news/news_2026_39/Terminal-Ferroutage-Modalis---Dunkerque-Port-2025-10-30-(55).jpg,https://lok-report.de/images/news/news_2026_39/Terminal-Ferroutage-Modalis---Dunkerque-Port-2025-10-30-(12).jpg,https://lok-report.de/images/news/news_2026_39/Carte-routes-@-DELTA-RAIL.jpg
