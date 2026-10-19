@@ -1,6 +1,7 @@
-=== LOG DURCHLAUF VOM 2026-10-19 18:02:44 ===
+=== LOG DURCHLAUF VOM 2026-10-19 23:52:38 ===
 Artikel insgesamt: 20
 
+[2026-10-19 18:00:00 +0200] 35 1097 auf Rundfahrt in Sachsen | Bilder: IMG_2026-10-17-08-11-06_01.jpg,IMG_2026-10-17-08-56-08_03.jpg,IMG_2026-10-17-09-20-22_06.jpg,IMG_2026-10-17-10-53-04_01.jpg,IMG_2026-10-17-10-53-17_02.jpg | URLs: https://lok-report.de/images/news/news_2026_42/IMG_2026-10-17-08-11-06_01.jpg,https://lok-report.de/images/news/news_2026_42/IMG_2026-10-17-08-56-08_03.jpg,https://lok-report.de/images/news/news_2026_42/IMG_2026-10-17-09-20-22_06.jpg,https://lok-report.de/images/news/news_2026_42/IMG_2026-10-17-10-53-04_01.jpg,https://lok-report.de/images/news/news_2026_42/IMG_2026-10-17-10-53-17_02.jpg
 [2026-10-19 17:00:00 +0200] Von abgebrochenen "Klo-Riegeln"  zu komplett defekten WCs , bis zu Oberleitungs- und Weichenstörungen | Bilder: IMG_20261018_164759.jpg,IMG_20261018_154305.jpg,IMG_20261018_154554.jpg | URLs: https://lok-report.de/images/news/news_2026_42/IMG_20261018_164759.jpg,https://lok-report.de/images/news/news_2026_42/IMG_20261018_154305.jpg,https://lok-report.de/images/news/news_2026_42/IMG_20261018_154554.jpg
 [2026-10-19 16:00:00 +0200] Ein Zug den es nicht geben dürfte | Bilder: image0.jpg,image1u.jpg,image0f.jpg,image0s.jpg | URLs: https://lok-report.de/images/news/news_2026_41/image0.jpg,https://lok-report.de/images/news/news_2026_41/image1u.jpg,https://lok-report.de/images/news/news_2026_41/image0f.jpg,https://lok-report.de/images/news/news_2026_41/image0s.jpg
 [2026-10-19 14:58:00 +0200] Spanien: Drei weitere Millionen Euro zur Unterstützung von im Güterverkehr eingesetzten Diesellokomotiven | Bilder: esptr.jpg | URLs: https://lok-report.de/images/news/news_2026_42/esptr.jpg
@@ -20,4 +21,3 @@ Artikel insgesamt: 20
 [2026-10-19 09:34:00 +0200] Schweden: AB Transitio schreibt Rahmenvereinbarung für Regionalzüge aus | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-10-19 09:32:00 +0200] Rumänien: SNTFC "CFR Călători" sagt Ausschreibung zur Vermietung von DMU ohne Ergebnis ab | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-10-19 09:30:00 +0200] Tschechien: Die Länderbahn CZ sagt Ausschreibung über BEMU 130 ohne Ergebnis ab | Bilder: KEIN_BILD | URLs: KEIN_BILD
-[2026-10-19 09:00:00 +0200] Norwegen: Noch mehr Verspätung für Nordlandsbanen-Nachtzüge | Bilder: Probefahrt.jpg,854179553_39088565410787249_4886303245264718315_n.jpg | URLs: https://lok-report.de/images/news/news_2026_41/Probefahrt.jpg,https://lok-report.de/images/news/news_2026_41/854179553_39088565410787249_4886303245264718315_n.jpg
