@@ -1,6 +1,12 @@
-=== LOG DURCHLAUF VOM 2026-10-22 04:35:48 ===
+=== LOG DURCHLAUF VOM 2026-10-22 10:08:52 ===
 Artikel insgesamt: 20
 
+[2026-10-22 10:00:00 +0200] Vossloh: Auftragslage nach neun Monaten 2026 auf anhaltend hohem Niveau, starke Geschäftsentwicklung im vierten Quartal erwartet | Bilder: KEIN_BILD | URLs: KEIN_BILD
+[2026-10-22 09:32:00 +0200] Italien: Tesmec Rail und SVI liefern Arbeitswagen an RFI | Bilder: KEIN_BILD | URLs: KEIN_BILD
+[2026-10-22 09:30:00 +0200] Tschechien: Inno4wood, InnoSped und EP Cargo fahren erneut Holz für die Forstverwaltung Brno | Bilder: KEIN_BILD | URLs: KEIN_BILD
+[2026-10-22 09:00:00 +0200] Tschechien: Die Sanierung des Bergbau-Museums Mayrau bei Kladno schreitet voran | Bilder: Mayrau-vlak-výřez-(1).jpg | URLs: https://lok-report.de/images/news/news_2026_42/Mayrau-vlak-výřez-(1).jpg
+[2026-10-22 08:00:00 +0200] Ungarn: Ab Dezember direkte Railjet-Verbindungen von Miskolc, Füzesabony und Hatvan nach Wien und München | Bilder: budap.jpg | URLs: https://lok-report.de/images/news/news_2026_42/budap.jpg
+[2026-10-22 07:00:00 +0200] Tansania: Neue Planungen für eine Normalspurbahn Mtwara–Mbamba Bay im Süden des Landes | Bilder: tansania-4.jpg,tansania-5.jpg,tansania-2.jpg,tansania-3.jpg,tansania-1.jpg | URLs: https://lok-report.de/images/news/news_2026_42/tansania-4.jpg,https://lok-report.de/images/news/news_2026_42/tansania-5.jpg,https://lok-report.de/images/news/news_2026_42/tansania-2.jpg,https://lok-report.de/images/news/news_2026_42/tansania-3.jpg,https://lok-report.de/images/news/news_2026_42/tansania-1.jpg
 [2026-10-21 18:45:00 +0200] National-Express und Eurobahn sagen langsam "Bye-bye" | Bilder: FB_IMG_1792592069864.jpg,FB_IMG_1792591900506.jpg | URLs: https://lok-report.de/images/news/news_2026_42/FB_IMG_1792592069864.jpg,https://lok-report.de/images/news/news_2026_42/FB_IMG_1792591900506.jpg
 [2026-10-21 18:00:00 +0200] Frankreich: Marseille Saint-Charles | Bilder: 20261020_120558.jpg,20261020_120417.jpg | URLs: https://lok-report.de/images/news/news_2026_42/20261020_120558.jpg,https://lok-report.de/images/news/news_2026_42/20261020_120417.jpg
 [2026-10-21 17:00:00 +0200] Rendsburg in den 70er und 80er Jahren | Bilder: 0041Di14-XLI-14-B008434-R1-12-13.jpg,0041Di16-XLI-16-B008434-R1-10-11.jpg,0264DI05.jpg,0264DI07-Peter-Tadsen.jpg,0264DI14.jpg,0264DI27.jpg | URLs: https://lok-report.de/images/news/news_2026_42/0041Di14-XLI-14-B008434-R1-12-13.jpg,https://lok-report.de/images/news/news_2026_42/0041Di16-XLI-16-B008434-R1-10-11.jpg,https://lok-report.de/images/news/news_2026_42/0264DI05.jpg,https://lok-report.de/images/news/news_2026_42/0264DI07-Peter-Tadsen.jpg,https://lok-report.de/images/news/news_2026_42/0264DI14.jpg,https://lok-report.de/images/news/news_2026_42/0264DI27.jpg
@@ -15,9 +21,3 @@ Artikel insgesamt: 20
 [2026-10-21 14:04:00 +0200] Österreich: 5 Jahre Klimaticket – Westbahn will Erfolgsmodell weiterdenken – Bahnfahren muss für alle einfacher werden | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-10-21 13:49:00 +0200] Schweiz: KVF-N berät über Initiativen mit Bezug zum Projekt «Verkehr ’45» | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-10-21 13:45:00 +0200] Schweiz: Anhörungen zum Land- und Luftverkehr | Bilder: KEIN_BILD | URLs: KEIN_BILD
-[2026-10-21 13:39:00 +0200] Schweiz: 125 Jahre SBB – ein Jubiläum für die ganze Schweiz | Bilder: sbb.jpg | URLs: https://lok-report.de/images/news/news_2026_42/sbb.jpg
-[2026-10-21 13:34:00 +0200] Schweiz: SBB Cargo Schweiz stellt die Lokomotiven Re 484 per Ende 2026 ausser Dienst | Bilder: SBB_Re_484_Biaschina.jpg | URLs: https://lok-report.de/images/news/news_2026_42/SBB_Re_484_Biaschina.jpg
-[2026-10-21 13:30:00 +0200] Schweiz: Grundstein für neue BLS-Werkstätte gelegt | Bilder: bls1.jpg,bls2.jpg | URLs: https://lok-report.de/images/news/news_2026_42/bls1.jpg,https://lok-report.de/images/news/news_2026_42/bls2.jpg
-[2026-10-21 13:20:00 +0200] Baden-Württemberg: WikiReal zum Pfaffensteigtunnel - Das nächste Desaster nach Stuttgart 21! | Bilder: KEIN_BILD | URLs: KEIN_BILD
-[2026-10-21 13:10:00 +0200] Österreich: Flankenfahrt am Zentralverschiebebahnhof Wien-Kledering | Bilder: KEIN_BILD | URLs: KEIN_BILD
-[2026-10-21 13:00:00 +0200] Niedersachsen: Kalkzug nach Fredenbeck zeigt das Potenzial regionaler Güterverkehre in der Fläche | Bilder: Entladung-Kalkzug.jpg,Kalkverladung_LKW.jpg | URLs: https://lok-report.de/images/news/news_2026_42/Entladung-Kalkzug.jpg,https://lok-report.de/images/news/news_2026_42/Kalkverladung_LKW.jpg
