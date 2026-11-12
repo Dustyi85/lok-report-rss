@@ -1,6 +1,10 @@
-=== LOG DURCHLAUF VOM 2026-11-12 15:19:30 ===
+=== LOG DURCHLAUF VOM 2026-11-12 22:39:55 ===
 Artikel insgesamt: 20
 
+[2026-11-12 17:30:00 +0100] Mainschleifenbahn: Dipl.-Ing. Rudiger Kuhn, der erste Eisenbahnbetriebsleiter verstorben | Bilder: 071021-17.jpg,Rüdiger-Kuhn-am-Schienenbus.jpg | URLs: https://lok-report.de/images/news/news_2026_45/071021-17.jpg,https://lok-report.de/images/news/news_2026_45/Rüdiger-Kuhn-am-Schienenbus.jpg
+[2026-11-12 16:51:00 +0100] DVF: Parlamentarischer Abend der Parlamentsgruppe Schienenverkehr | Bilder: 261111_IDVF_PHT001.jpg,261111_IDVF_PHT008.jpg,261111_IDVF_PHT047.jpg,261111_IDVF_PHT046.jpg | URLs: https://lok-report.de/images/news/news_2026_45/261111_IDVF_PHT001.jpg,https://lok-report.de/images/news/news_2026_45/261111_IDVF_PHT008.jpg,https://lok-report.de/images/news/news_2026_45/261111_IDVF_PHT047.jpg,https://lok-report.de/images/news/news_2026_45/261111_IDVF_PHT046.jpg
+[2026-11-12 16:36:00 +0100] Nostalgisch zum Glühwein-Genuss – Sonderfahrten des Traditionszuges zu den Weihnachtsmärkten in Bärnsdorf und Radeburg | Bilder: Winter_web-1024x579.jpg,Winter1_web-1024x579.jpg | URLs: https://lok-report.de/images/news/news_2026_45/Winter_web-1024x579.jpg,https://lok-report.de/images/news/news_2026_45/Winter1_web-1024x579.jpg
+[2026-11-12 15:43:00 +0100] Rhomberg Sersa: Gäubahnausbau Nord tritt in die nächste Phase ein | Bilder: romse.jpg | URLs: https://lok-report.de/images/news/news_2026_45/romse.jpg
 [2026-11-12 13:51:00 +0100] Italien: FS Italiane stockt die nachhaltigkeitsgebundene revolvierende Kreditfazilität auf 4,8 Milliarden Euro auf | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-11-12 13:45:00 +0100] Schweiz: SOB bietet neue Direktverbindung vom Zürcher Oberland zum Skigebiet Flumserberg | Bilder: csm_Foto_MM_Skizug_SOB_2367b85d2b.jpg,sob1.jpg | URLs: https://lok-report.de/images/news/news_2026_45/csm_Foto_MM_Skizug_SOB_2367b85d2b.jpg,https://lok-report.de/images/news/news_2026_45/sob1.jpg
 [2026-11-12 13:34:00 +0100] Hessen: Ticketpreise im NVV bleiben zum Jahreswechsel stabil – Tarifstrukturreform ist für August 2027 geplant | Bilder: csm_Ticketkauf_ae9b4edb6c.jpg | URLs: https://lok-report.de/images/news/news_2026_45/csm_Ticketkauf_ae9b4edb6c.jpg
@@ -17,7 +21,3 @@ Artikel insgesamt: 20
 [2026-11-12 10:40:00 +0100] Hamburg: Trübe Aussichten für Bahnkunden in den nächsten 15 Jahren | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-11-12 10:30:00 +0100] Griechenland: Zugpsoitionierungssystem freigeschaltet | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-11-12 10:15:00 +0100] Brandenburg: Weitere Ergebnisse der Machbarkeitsstudien zur Reaktivierung von Bahnstrecken und Stationen in Brandenburg liegen vor | Bilder: KEIN_BILD | URLs: KEIN_BILD
-[2026-11-12 10:00:00 +0100] Großbritannien: RMT und Northern einigen sich nach Jahren über die Aufgaben der Zugbegleiter | Bilder: 527377c42ab44c66b4d61d20cb754b0f.jpg | URLs: https://lok-report.de/images/news/news_2026_45/527377c42ab44c66b4d61d20cb754b0f.jpg
-[2026-11-12 09:34:00 +0100] Tschechien: Arriva schreibt BEMU für Praha und Mittelböhmen II aus | Bilder: KEIN_BILD | URLs: KEIN_BILD
-[2026-11-12 09:32:00 +0100] Schweiz: Sihltal Zürich Uetliberg Bahn schreibt Rahmenvertrag Rottenverstärkung Fahrleitung & Fahrzeuge aus | Bilder: KEIN_BILD | URLs: KEIN_BILD
-[2026-11-12 09:30:00 +0100] Niedersachsen: Schiffahrt der Inselgemeinde Langeoog sucht einen Eisenbahnbetriebsleiter | Bilder: KEIN_BILD | URLs: KEIN_BILD
