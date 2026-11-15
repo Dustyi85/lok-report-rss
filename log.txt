@@ -1,6 +1,8 @@
-=== LOG DURCHLAUF VOM 2026-11-15 01:33:17 ===
+=== LOG DURCHLAUF VOM 2026-11-15 11:11:47 ===
 Artikel insgesamt: 20
 
+[2026-11-15 11:00:00 +0100] Kiel - Gravita mit Blessuren am Nord-Ostsee-Kanal | Bilder: (c)_Tomke-Scheel_P1771613_1265-499-4.jpg,(c)_Tomke-Scheel_P1771685_SFK-Holtenau.jpg | URLs: https://lok-report.de/images/news/news_2026_45/(c)_Tomke-Scheel_P1771613_1265-499-4.jpg,https://lok-report.de/images/news/news_2026_45/(c)_Tomke-Scheel_P1771685_SFK-Holtenau.jpg
+[2026-11-15 10:00:00 +0100] Ungarn: Abgestellte Loks in Székesfehérvár | Bilder: 2026-08-01-MÁV-START-418-150-2-+-117-320-2,-Székesfehérvár.jpg,2026-08-01-MÁV-START-431-284-3,-Székesfehérvár.jpg,2026-08-01-MÁV-START-M28-2008-+-628-315-418-331,-Székesfehérvár.jpg,2026-08-01-TERHELÉSI-PRÓBAKOCSI-H-START-99-55-9380-532-9-Ygl,-Prüfwagen,-Székesfehérvár.jpg | URLs: https://lok-report.de/images/news/news_2026_45/2026-08-01-MÁV-START-418-150-2-+-117-320-2,-Székesfehérvár.jpg,https://lok-report.de/images/news/news_2026_45/2026-08-01-MÁV-START-431-284-3,-Székesfehérvár.jpg,https://lok-report.de/images/news/news_2026_45/2026-08-01-MÁV-START-M28-2008-+-628-315-418-331,-Székesfehérvár.jpg,https://lok-report.de/images/news/news_2026_45/2026-08-01-TERHELÉSI-PRÓBAKOCSI-H-START-99-55-9380-532-9-Ygl,-Prüfwagen,-Székesfehérvár.jpg
 [2026-11-14 17:00:00 +0100] Baden-Württemberg: Street-Art-Jubiläum bringt Farbe nach Stuttgart-Zuffenhausen | Bilder: street.jpg | URLs: https://lok-report.de/images/news/news_2026_45/street.jpg
 [2026-11-14 16:00:00 +0100] Deutsche Bahn: Erste positive Effekte nach Start des bundesweiten Alkoholkonsumverbots | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-11-14 15:00:00 +0100] Schweiz: SBB stellt Bahnstromversorgung nach einem Blackout in fünf Minuten wieder her | Bilder: 3MqxxmPvjcYce4vQYN6d.jpg,gGRqh8VrGVTtSK6dra1L.jpg,FnJwQ1Vd8jBdNwZ3ZSGF.jpg,JKWzf3Q1E7fqUUewgU5W.jpg | URLs: https://lok-report.de/images/news/news_2026_45/3MqxxmPvjcYce4vQYN6d.jpg,https://lok-report.de/images/news/news_2026_45/gGRqh8VrGVTtSK6dra1L.jpg,https://lok-report.de/images/news/news_2026_45/FnJwQ1Vd8jBdNwZ3ZSGF.jpg,https://lok-report.de/images/news/news_2026_45/JKWzf3Q1E7fqUUewgU5W.jpg
@@ -19,5 +21,3 @@ Artikel insgesamt: 20
 [2026-11-13 14:14:00 +0100] VDV: Bund kürzt bei der Schiene und verunsichert die Branche | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-11-13 14:10:00 +0100] Hamburg: U5-Haltestelle in der City Nord im Rohbau fertiggestellt | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-11-13 14:10:00 +0100] Bayern: DB InfraGO beseitigt Langsamfahrstellen zwischen Mühldorf und München | Bilder: KEIN_BILD | URLs: KEIN_BILD
-[2026-11-13 14:00:00 +0100] Niedersachsen: Staatspreis für Architektur 2026 geht an das sich in die Bahnanlagen einfügende Museum Friedland | Bilder: 280647.jpg | URLs: https://lok-report.de/images/news/news_2026_45/280647.jpg
-[2026-11-13 13:48:00 +0100] Mobifair: Umzug und neue Adresse | Bilder: KEIN_BILD | URLs: KEIN_BILD
