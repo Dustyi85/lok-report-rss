@@ -1,6 +1,8 @@
-=== LOG DURCHLAUF VOM 2026-11-22 01:48:35 ===
+=== LOG DURCHLAUF VOM 2026-11-22 11:31:56 ===
 Artikel insgesamt: 20
 
+[2026-11-22 11:00:00 +0100] Österreich: Rollende Kaffeehäuser | Bilder: 1000006191.jpg,1000006194.jpg | URLs: https://lok-report.de/images/news/news_2026_47/1000006191.jpg,https://lok-report.de/images/news/news_2026_47/1000006194.jpg
+[2026-11-22 10:00:00 +0100] Wenn der Weihnachtsmann am Bahnhof Bebra Halt macht … | Bilder: Dauerausstellung-Bahnhof-Bebra,-Weihnachtsquiz.jpg | URLs: https://lok-report.de/images/news/news_2026_46/Dauerausstellung-Bahnhof-Bebra,-Weihnachtsquiz.jpg
 [2026-11-21 18:00:00 +0100] Striezelmarktexpress der OSEF | Bilder: 991.jpg | URLs: https://lok-report.de/images/news/news_2026_46/991.jpg
 [2026-11-21 14:00:00 +0100] Brückenneubauten bei Dackenheim und in Freinsheim (Teil 3) | Bilder: wb-14.jpg,wb-15.jpg,wb-16.jpg,wb-17.jpg,wb-18.jpg,wb-19.jpg,wb-20.jpg,wb-21.jpg | URLs: https://lok-report.de/images/news/news_2026_46/wb-14.jpg,https://lok-report.de/images/news/news_2026_46/wb-15.jpg,https://lok-report.de/images/news/news_2026_46/wb-16.jpg,https://lok-report.de/images/news/news_2026_46/wb-17.jpg,https://lok-report.de/images/news/news_2026_46/wb-18.jpg,https://lok-report.de/images/news/news_2026_46/wb-19.jpg,https://lok-report.de/images/news/news_2026_46/wb-20.jpg,https://lok-report.de/images/news/news_2026_46/wb-21.jpg
 [2026-11-21 13:00:00 +0100] Schleswig.Holstein: Ein Gleistrapez nördlich von Norderstedt | Bilder: KEIN_BILD | URLs: KEIN_BILD
@@ -19,5 +21,3 @@ Artikel insgesamt: 20
 [2026-11-20 15:43:00 +0100] BSN: LV InfraGO ist ein weiterer Schritt in die richtige Richtung | Bilder: KEIN_BILD | URLs: KEIN_BILD
 [2026-11-20 15:00:00 +0100] Pausenfüller | Bilder: _D1A6548_1.jpg,_D1A6551_1.jpg,_D1A6553_1.jpg,_D1A6558_1.jpg,_D1A6560_1.jpg,_D1A6562_1.jpg | URLs: https://lok-report.de/images/news/news_2026_46/_D1A6548_1.jpg,https://lok-report.de/images/news/news_2026_46/_D1A6551_1.jpg,https://lok-report.de/images/news/news_2026_46/_D1A6553_1.jpg,https://lok-report.de/images/news/news_2026_46/_D1A6558_1.jpg,https://lok-report.de/images/news/news_2026_46/_D1A6560_1.jpg,https://lok-report.de/images/news/news_2026_46/_D1A6562_1.jpg
 [2026-11-20 14:30:00 +0100] Sachsen:  Wiederaufnahme des Zugverkehrs in Werdau zum Fahrplanwechsel noch nicht möglich | Bilder: werdau.jpg | URLs: https://lok-report.de/images/news/news_2026_46/werdau.jpg
-[2026-11-20 14:10:00 +0100] Konsequent nachhaltig: Saarstahl erhält erneut EcoVadis-Platin-Medaille | Bilder: KEIN_BILD | URLs: KEIN_BILD
-[2026-11-20 14:00:00 +0100] Österreich: Kommentar zu den fakten zur Verlagerung von der Straße auf die Schiene | Bilder: KEIN_BILD | URLs: KEIN_BILD
